@@ -1,6 +1,6 @@
 export const quote = {
     initial: {
-        opacity: 0.5,
+        opacity: 1,
     },
     animate: {
         opacity: 1,
