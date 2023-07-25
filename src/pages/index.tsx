@@ -1,11 +1,14 @@
-import Layout from '@/components/Layout';
 import Image from 'next/image';
-import { FC } from 'react';
-import profile from '../../public/images/profile/developer-pic-1.png';
 import Link from 'next/link';
+import { FC } from 'react';
+
+import profile from '../../public/images/profile/developer-pic-1.png';
+import lightBuld from '../../public/images/svgs/miscellaneous_icons_1.svg'
+
 import AnimatedText from '@/components/AnimatedText';
-import { LinkArrowIcon } from '@/components/Icons';
 import HireMe from '@/components/HireMe';
+import { LinkArrowIcon } from '@/components/Icons';
+import Layout from '@/components/Layout';
 
 const HOME_ANIMATED_TEXT = 'Andy Tang Supper Developer.';
 const HOME_DESCRIPTION_TEXT =
@@ -43,6 +46,9 @@ const Home: FC = () => {
                 </div>
             </Layout>
             <HireMe /> 
+            <div className='absolute right-8 inline-block w-24'>
+                <Image src={lightBuld} alt='light' className='w-full h-auto'/>
+            </div>
         </main>
     );
 };
