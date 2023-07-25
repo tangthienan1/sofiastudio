@@ -6,7 +6,6 @@ const Document: FC = () => {
         <Html lang="en">
             <Head />
             <body>
-              thienan
                 <Main />
                 <NextScript />
             </body>
