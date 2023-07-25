@@ -2,9 +2,8 @@ import Layout from '@/components/Layout';
 import Image from 'next/image';
 import { FC } from 'react';
 import profile from '../../public/images/profile/developer-pic-1.png';
-import AnimatedText from '@/components/AnimatedText/AnimatedText';
 import Link from 'next/link';
-import { LinkArrow } from '@/components/Icons/Icons';
+import AnimatedText from '@/components/AnimatedText';
 
 const HOME_ANIMATED_TEXT = 'Turning Vision Into Reality With Code And Design.';
 const HOME_DESCRIPTION_TEXT =
