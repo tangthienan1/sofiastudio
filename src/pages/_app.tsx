@@ -1,5 +1,6 @@
 import { montserrat } from '@/app/layout';
-import NavBar from '@/components/NavBar/NavBar';
+import Footer from '@/components/Footer';
+import NavBar from '@/components/NavBar';
 import '@/styles/globals.css';
 import Head from 'next/head';
 import { FC } from 'react';
@@ -24,6 +25,7 @@ const App: FC<AppType> = ({ Component, pageProps }) => {
             <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}>
                 <NavBar />
                 <Component {...pageProps} />
+                <Footer />
             </main>
         </>
     );

@@ -4,8 +4,10 @@ import { FC } from 'react';
 import profile from '../../public/images/profile/developer-pic-1.png';
 import Link from 'next/link';
 import AnimatedText from '@/components/AnimatedText';
+import { LinkArrowIcon } from '@/components/Icons';
+import HireMe from '@/components/HireMe';
 
-const HOME_ANIMATED_TEXT = 'Turning Vision Into Reality With Code And Design.';
+const HOME_ANIMATED_TEXT = 'Andy Tang Supper Developer.';
 const HOME_DESCRIPTION_TEXT =
     'As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development. ';
 
@@ -28,7 +30,7 @@ const Home: FC = () => {
                                 border-2 border-solid border-transparent hover:border-dark"
                                 download={true}
                             >
-                                Resume <LinkArrow className="w-6 ml-1" />
+                                Resume <LinkArrowIcon className="w-6 ml-1" />
                             </Link>
                             <Link
                                 href="mailto:tangthienan9@gmail.com"
@@ -40,6 +42,7 @@ const Home: FC = () => {
                     </div>
                 </div>
             </Layout>
+            <HireMe /> 
         </main>
     );
 };
