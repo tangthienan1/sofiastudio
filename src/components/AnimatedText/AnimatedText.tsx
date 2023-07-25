@@ -1,21 +1,10 @@
 import React, { FC } from 'react';
 import { motion } from 'framer-motion';
+import { quote, singleWord } from './AnimatedTextMotion';
 
 type AnimatedTextType = {
     text: string;
     className?: string;
-};
-
-const quote = {
-    initial: {
-        opacity: 0,
-    },
-    animate: {
-        opacity: 1,
-        transition: {
-            delay: 0.5,
-        },
-    },
 };
 
 const AnimatedText: FC<AnimatedTextType> = ({ text, className }) => {
@@ -32,9 +21,13 @@ const AnimatedText: FC<AnimatedTextType> = ({ text, className }) => {
                 animate="animate"
             >
                 {text.split(' ').map((word, index) => (
-                    <span key={word + '-' + index} className="inline-block">
+                    <motion.span
+                        key={word + '-' + index}
+                        className="inline-block"
+                        variants={singleWord}
+                    >
                         {word}&nbsp;
-                    </span>
+                    </motion.span>
                 ))}
             </motion.h1>
         </div>
