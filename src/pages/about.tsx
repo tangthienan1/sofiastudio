@@ -7,6 +7,7 @@ import HighlightNumberByText from '@/components/HighlightNumberByText';
 import Layout from '@/components/Layout';
 
 import profilePic from '../../public/images/profile/developer-pic-2.jpg';
+import Skills from '@/components/Skills';
 
 const highlightContentList = [
     {
@@ -78,6 +79,7 @@ const About = () => {
                             ))}
                         </div>
                     </div>
+                    <Skills />
                 </Layout>
             </main>
         </>
