@@ -17,7 +17,7 @@ const About = () => {
     const title = 'Passion Fuels Purpose!';
     return (
         <>
-            <CustomHead title="Andy | About Page" description="any"/>
+            <CustomHead title="About Page" content="any"/>
             <main className="flex w-full flex-col items-center justify-center">
                 <Layout>
                     <AnimatedText text={title} className="mb-16" />

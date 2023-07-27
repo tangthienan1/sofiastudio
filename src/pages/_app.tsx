@@ -20,7 +20,7 @@ const App: FC<AppType> = ({ Component, pageProps }) => {
                     content="This is Andy Tang a software developer Portfolio"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/logo.jpg" />
             </Head>
             <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}>
                 <NavBar />
