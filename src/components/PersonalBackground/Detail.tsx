@@ -2,23 +2,11 @@ import { FC, useRef } from 'react';
 import LiIcon from './LiIcon';
 import { motion } from 'framer-motion';
 
-export type ExperienceDetailsType = {
-    position: string;
-    company: string;
-    companyLink: string;
-    time: string;
-    address: string;
-    work: string;
-};
+import { BackgroundDetailType } from '@/data/aboutPageData';
 
-const ExperienceDetail: FC<ExperienceDetailsType> = ({
-    position,
-    company,
-    companyLink,
-    time,
-    address,
-    work,
-}) => {
+export type DetailType = BackgroundDetailType;
+
+const Detail: FC<DetailType> = ({ title, subTitle, subtitleLink, time, address, description }) => {
     const ref = useRef(null);
     return (
         <li
@@ -33,18 +21,21 @@ const ExperienceDetail: FC<ExperienceDetailsType> = ({
                 transition={{ duration: 0.5, type: 'spring' }}
             >
                 <h3 className="capitalize font-bold text-2xl">
-                    {position}&nbsp;{' '}
-                    <a href={companyLink} target="_blank" className="text-primary capitalize">
-                        @{company}
-                    </a>
+                    {title}
+                    {subtitleLink && subTitle && (
+                        <a href={subtitleLink} target="_blank" className="text-primary capitalize">
+                            {' '}
+                            @{subTitle}
+                        </a>
+                    )}
                 </h3>
                 <span className="capitalize font-medium text-dark/75">
                     {time} | {address}
                 </span>
-                <p className="font-medium w-full">{work}</p>
+                <p className="font-medium w-full">{description}</p>
             </motion.div>
         </li>
     );
 };
 
-export default ExperienceDetail;
+export default Detail;

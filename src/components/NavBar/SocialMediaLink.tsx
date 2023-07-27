@@ -1,5 +1,6 @@
 import { LinkProps } from 'next/link';
 import { FC } from 'react';
+
 import { MotionLink } from '../common';
 
 type SocialMediaLinkType = {

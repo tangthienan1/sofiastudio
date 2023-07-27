@@ -1,6 +1,7 @@
 import React from 'react';
-import Layout from '../Layout';
 import Link from 'next/link';
+
+import Layout from '../Layout';
 
 const Footer = () => {
     return (
@@ -10,10 +11,14 @@ const Footer = () => {
                 <div className="flex items-center">
                     Build With <span className="text-primary text-2xl px-1">&#9825;</span> by&nbsp;
                     <Link href="https://google.com" className="underline underline-offset-2">
-                        CodeBucks
+                        AndyTang
                     </Link>
                 </div>
-                <Link href="https://goole.com" target="_blank" className='underline underline-offset-2'>
+                <Link
+                    href="https://goole.com"
+                    target="_blank"
+                    className="underline underline-offset-2"
+                >
                     Say Hello
                 </Link>
             </Layout>

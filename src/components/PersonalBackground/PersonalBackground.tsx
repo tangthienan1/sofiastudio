@@ -1,9 +1,12 @@
-import { useRef } from 'react';
-import ExperienceDetail from './ExperienceDetails';
-import experiences from './experiences';
 import { motion, useScroll } from 'framer-motion';
+import { FC, useRef } from 'react';
+import Detail, { DetailType } from './Detail';
 
-const Experience = () => {
+type PersonalBackgroundType = {
+    title: string;
+    details: DetailType[];
+};
+const PersonalBackground: FC<PersonalBackgroundType> = ({ title, details }) => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -13,7 +16,7 @@ const Experience = () => {
 
     return (
         <div className="my-64">
-            <h2 className="font-bold text-8xl mb-32 w-full text-center">Experience</h2>
+            <h2 className="font-bold text-8xl mb-32 w-full text-center">{title}</h2>
             <div ref={ref} className="w-[75%] mx-auto relative">
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
@@ -21,8 +24,8 @@ const Experience = () => {
                 />
 
                 <ul className="w-full flex flex-col items-start justify-between ml-4">
-                    {experiences.map((experience, index) => (
-                        <ExperienceDetail {...{ ...experience }} key={index} />
+                    {details.map((detail, index) => (
+                        <Detail {...{ ...detail }} key={index} />
                     ))}
                 </ul>
             </div>
@@ -30,4 +33,4 @@ const Experience = () => {
     );
 };
 
-export default Experience;
+export default PersonalBackground;

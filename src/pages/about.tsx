@@ -3,44 +3,15 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import AnimatedText from '@/components/AnimatedText';
-import Experience from '@/components/Experience';
 import HighlightNumberByText from '@/components/HighlightNumberByText';
 import Layout from '@/components/Layout';
+import PersonalBackground from '@/components/PersonalBackground';
+import experiences from '@/components/PersonalBackground/experiences';
 import Skills from '@/components/Skills';
 
+import { biographyContentsData, educations, highlightContentsData } from '@/data/aboutPageData';
+
 import profilePic from '../../public/images/profile/developer-pic-2.jpg';
-
-const highlightContentList = [
-    {
-        number: 50,
-        content: 'satisfied clients',
-    },
-    {
-        number: 40,
-        content: 'projects completed',
-    },
-    {
-        number: 3,
-        content: 'years of experience',
-    },
-];
-
-const biographyContents = [
-    `Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion
-   for creating beautiful, functional, and user-centered digital
-   experiences. With 4 years of experience in the field. I am always
-   looking for new and innovative ways to bring my clients' visions to
-   life.`,
-    `I believe that design is about more than just making things look
-  pretty – it's about solving problems and creating intuitive,
-  enjoyable experiences for users.`,
-    `
-  Whether I'm working on a website, mobile app, or other digital
-  product, I bring my commitment to design excellence and
-  user-centered thinking to every project I work on. I look forward to
-  the opportunity to bring my skills and passion to your next project. 
-  `,
-];
 
 const About = () => {
     const title = 'Passion Fuels Purpose!';
@@ -58,7 +29,7 @@ const About = () => {
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
                                 Biography
                             </h2>
-                            {biographyContents.map((content, index) => (
+                            {biographyContentsData.map((content, index) => (
                                 <p className="font-medium" key={index}>
                                     {content}
                                 </p>
@@ -75,13 +46,14 @@ const About = () => {
                         </div>
 
                         <div className="col-span-2 flex flex-col items-end justify-between">
-                            {highlightContentList.map(({ number, content }, index) => (
-                                <HighlightNumberByText {...{ number, content }} key={index} />
+                            {highlightContentsData.map((highlightContent, index) => (
+                                <HighlightNumberByText {...highlightContent} key={index} />
                             ))}
                         </div>
                     </div>
                     <Skills />
-                    <Experience />
+                    <PersonalBackground title="Experience" details={experiences} />
+                    <PersonalBackground title="Education" details={educations} />
                 </Layout>
             </main>
         </>

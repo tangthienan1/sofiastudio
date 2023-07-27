@@ -26,7 +26,7 @@ const AnimatedNumber: FC<AnimatedNumberType> = ({ value }) => {
         });
     }, [springValue, value]);
 
-    return <span ref={ref}></span>;
+    return <span ref={ref} />;
 };
 
 export default AnimatedNumber;

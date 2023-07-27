@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { motion } from 'framer-motion';
+
 import { quote, singleWord } from './AnimatedTextMotion';
 
 type AnimatedTextType = {

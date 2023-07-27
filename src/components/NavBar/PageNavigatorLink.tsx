@@ -1,6 +1,6 @@
 import Link, { LinkProps } from 'next/link';
 import { useRouter } from 'next/router';
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 type PagerNavigatorLinkType = {
     title?: string;
