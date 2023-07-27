@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import Head from 'next/head';
 import Image from 'next/image';
 
 import AnimatedText from '@/components/AnimatedText';
@@ -11,16 +10,14 @@ import Skills from '@/components/Skills';
 
 import { biographyContentsData, educations, highlightContentsData } from '@/data/aboutPageData';
 
+import CustomHead from '@/components/CustomHead';
 import profilePic from '../../public/images/profile/developer-pic-2.jpg';
 
 const About = () => {
     const title = 'Passion Fuels Purpose!';
     return (
         <>
-            <Head>
-                <title>Andy | About Page</title>
-                <meta name="description" content="any description" />
-            </Head>
+            <CustomHead title="Andy | About Page" description="any"/>
             <main className="flex w-full flex-col items-center justify-center">
                 <Layout>
                     <AnimatedText text={title} className="mb-16" />

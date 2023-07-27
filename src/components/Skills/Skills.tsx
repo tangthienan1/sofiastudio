@@ -1,28 +1,5 @@
-import React, { FC } from 'react';
-
 import { motion } from 'framer-motion';
-
-type SkillType = {
-    name: string;
-    x: string;
-    y: string;
-};
-
-const Skill: FC<SkillType> = ({ name, x, y }) => {
-    return (
-        <motion.div
-            className="flex items-center justify-center rounded-full font-semibold bg-dark
-        text-light py-3 px-6 shadow-dark cursor-pointer absolute"
-            whileHover={{ scale: 1.05 }}
-            initial={{ x: 0, y: 0 }}
-            whileInView={{ x, y }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.5 }}
-        >
-            {name}
-        </motion.div>
-    );
-};
+import SkillItem from './SkillItem';
 
 const Skills = () => {
     return (
@@ -37,16 +14,16 @@ const Skills = () => {
                     Web
                 </motion.div>
 
-                <Skill name={'HTML'} x={'-25vw'} y={'2vw'} />
-                <Skill name={'CSS'} x={'-5vw'} y={'-10vw'} />
-                <Skill name={'Javascript'} x={'20vw'} y={'6vw'} />
-                <Skill name={'ReactJS'} x={'0vw'} y={'12vw'} />
-                <Skill name={'NextJS'} x={'-20vw'} y={'-15vw'} />
-                <Skill name={'GatsbyJS'} x={'15vw'} y={'-12vw'} />
-                <Skill name={'Web Design'} x={'32vw'} y={'-5vw'} />
-                <Skill name={'Figma'} x={'0vw'} y={'-20vw'} />
-                <Skill name={'AWS'} x={'-25vw'} y={'18vw'} />
-                <Skill name={'NodeJS'} x={'18vw'} y={'18vw'} />
+                <SkillItem name={'HTML'} x={'-25vw'} y={'2vw'} />
+                <SkillItem name={'CSS'} x={'-5vw'} y={'-10vw'} />
+                <SkillItem name={'Javascript'} x={'20vw'} y={'6vw'} />
+                <SkillItem name={'ReactJS'} x={'0vw'} y={'12vw'} />
+                <SkillItem name={'NextJS'} x={'-20vw'} y={'-15vw'} />
+                <SkillItem name={'GatsbyJS'} x={'15vw'} y={'-12vw'} />
+                <SkillItem name={'Web Design'} x={'32vw'} y={'-5vw'} />
+                <SkillItem name={'Figma'} x={'0vw'} y={'-20vw'} />
+                <SkillItem name={'AWS'} x={'-25vw'} y={'18vw'} />
+                <SkillItem name={'NodeJS'} x={'18vw'} y={'18vw'} />
             </div>
         </>
     );
