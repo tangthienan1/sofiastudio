@@ -4,7 +4,7 @@ import React, { FC } from 'react';
 import { GithubIcon } from '../Icons';
 import Image from 'next/image';
 
-const ProjectCard: FC<ProjectType> = ({ title, type, img, link, githubLink }) => {
+const SimpleProjectCard: FC<ProjectType> = ({ title, type, img, link, githubLink }) => {
     return (
         <article
             className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative"
@@ -40,4 +40,4 @@ const ProjectCard: FC<ProjectType> = ({ title, type, img, link, githubLink }) =>
     );
 };
 
-export default ProjectCard;
+export default SimpleProjectCard;

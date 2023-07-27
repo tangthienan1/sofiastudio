@@ -1,8 +1,7 @@
 import AnimatedText from '@/components/AnimatedText';
 import CustomHead from '@/components/CustomHead';
-import FeaturedProjectCard from '@/components/FeaturedProjectCard';
 import Layout from '@/components/Layout';
-import ProjectCard from '@/components/ProjectCard';
+import { FeaturedProjectCard, SimpleProjectCard } from '@/components/ProjectCard';
 import { projectPageTitle, projects } from '@/data/projectPageData';
 
 const Projects = () => {
@@ -24,7 +23,7 @@ const Projects = () => {
                             }
                             return (
                                 <div className="col-span-6" key={index}>
-                                    <ProjectCard {...project} />
+                                    <SimpleProjectCard {...project} />
                                 </div>
                             );
                         })}

@@ -1,2 +1,3 @@
-import ProjectCard from './ProjectCard';
-export default ProjectCard;
+import SimpleProjectCard from './SimpleProjectCard';
+import FeaturedProjectCard from './FeaturedProjectCard';
+export { SimpleProjectCard, FeaturedProjectCard };
