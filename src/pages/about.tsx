@@ -3,11 +3,12 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 import AnimatedText from '@/components/AnimatedText';
+import Experience from '@/components/Experience';
 import HighlightNumberByText from '@/components/HighlightNumberByText';
 import Layout from '@/components/Layout';
+import Skills from '@/components/Skills';
 
 import profilePic from '../../public/images/profile/developer-pic-2.jpg';
-import Skills from '@/components/Skills';
 
 const highlightContentList = [
     {
@@ -80,6 +81,7 @@ const About = () => {
                         </div>
                     </div>
                     <Skills />
+                    <Experience />
                 </Layout>
             </main>
         </>
