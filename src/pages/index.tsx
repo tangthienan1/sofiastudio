@@ -9,10 +9,7 @@ import AnimatedText from '@/components/AnimatedText';
 import HireMe from '@/components/HireMe';
 import { LinkArrowIcon } from '@/components/Icons';
 import Layout from '@/components/Layout';
-
-const HOME_ANIMATED_TEXT = 'Andy Tang Supper Developer.';
-const HOME_DESCRIPTION_TEXT =
-    'As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development. ';
+import { landingPageDescription, landingPageTitle } from '@/data/landingPageData';
 
 const Home: FC = () => {
     return (
@@ -23,8 +20,8 @@ const Home: FC = () => {
                         <Image src={profile} alt={'Me'} className="w-full h-auto" />
                     </div>
                     <div className="w-1/2 flex flex-col items-center self-center">
-                        <AnimatedText text={HOME_ANIMATED_TEXT} className="!text-6xl !text-left" />
-                        <p className="my-4 text-base font-medium">{HOME_DESCRIPTION_TEXT}</p>
+                        <AnimatedText text={landingPageTitle} className="!text-6xl !text-left" />
+                        <p className="my-4 text-base font-medium">{landingPageDescription}</p>
                         <div className="flex items-center self-start mt-2">
                             <Link
                                 href={'/Resume-Tang-Thien-An.pdf'}
