@@ -7,20 +7,19 @@ import Layout from '@/components/Layout';
 import PersonalBackground from '@/components/PersonalBackground';
 import experiences from '@/components/PersonalBackground/experiences';
 import Skills from '@/components/Skills';
-
-import { biographyContentsData, educations, highlightContentsData } from '@/data/aboutPageData';
-
 import CustomHead from '@/components/CustomHead';
+
+import { aboutTitle, biographyContentsData, educations, highlightContentsData } from '@/data/aboutPageData';
+
 import profilePic from '../../public/images/profile/developer-pic-2.jpg';
 
 const About = () => {
-    const title = 'Passion Fuels Purpose!';
     return (
         <>
             <CustomHead title="About Page" content="any"/>
             <main className="flex w-full flex-col items-center justify-center">
                 <Layout>
-                    <AnimatedText text={title} className="mb-16" />
+                    <AnimatedText text={aboutTitle} className="mb-16" />
                     <div className="grid w-full grid-cols-8 gap-16">
                         <div className="col-span-3 flex flex-col items-start justify-start">
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">

@@ -3,6 +3,8 @@ export type HighlightContentsType = {
     content: string;
 };
 
+export const aboutTitle = 'Passion Fuels Purpose!';
+
 export const highlightContentsData: HighlightContentsType[] = [
     {
         number: 50,
