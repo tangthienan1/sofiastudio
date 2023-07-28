@@ -10,7 +10,6 @@ const PersonalBackground: FC<PersonalBackgroundType> = ({ title, details }) => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
-        //The offset type is missing on useScroll package but can use normally
         offset: ['start end', 'center start'],
     });
 

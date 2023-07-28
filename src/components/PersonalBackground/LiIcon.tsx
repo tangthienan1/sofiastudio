@@ -9,7 +9,6 @@ const LiIcon: FC<LilIconType> = ({ reference }) => {
     const { scrollYProgress } = useScroll({
         layoutEffect: false,
         target: reference,
-        //The offset type is missing on useScroll package but can use normally
         offset: ['center end', 'center center'],
     });
     return (
