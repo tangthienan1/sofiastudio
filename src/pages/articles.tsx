@@ -12,7 +12,7 @@ const Articles = () => {
     return (
         <>
             <CustomHead title={'Articles Page'} content={'any'} />
-            <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
+            <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
                 <Layout className="pt-16">
                     <AnimatedText text={articlesPageTitle} className="mb-16" />
                     <div className="grid grid-cols-2 gap-16">

@@ -17,7 +17,7 @@ const SocialMediaLink: FC<LinkProps & SocialMediaLinkType> = ({
     return (
         <MotionLink
             {...{ href, target }}
-            className="w-6"
+            className="w-6 b"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             {...rest}

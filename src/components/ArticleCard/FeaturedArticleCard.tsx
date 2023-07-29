@@ -7,8 +7,8 @@ import AnimatedImage from '../AnimatedImage';
 
 const FeaturedArticleCard: FC<ArticleType> = ({ img, title, time, summary, link }) => {
     return (
-        <article className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl">
-            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
+        <article className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light">
+            <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light" />
             <Link
                 href={link}
                 target="_blank"
@@ -22,7 +22,7 @@ const FeaturedArticleCard: FC<ArticleType> = ({ img, title, time, summary, link 
                 </h2>
             </Link>
             <p className="text-sm mb-2">{summary}</p>
-            <span className="text-primary font-semibold">{time}</span>
+            <span className="text-primary font-semibold dark:text-primaryDark">{time}</span>
         </article>
     );
 };

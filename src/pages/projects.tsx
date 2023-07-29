@@ -8,7 +8,7 @@ const Projects = () => {
     return (
         <>
             <CustomHead title="project" content="any" />
-            <main className="w-full mb-16 flex flex-col items-center justify-center">
+            <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
                 <Layout className="pt-16">
                     <AnimatedText text={projectPageTitle} className="mb-16 " />
 

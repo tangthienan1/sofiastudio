@@ -13,7 +13,7 @@ const HighlightNumberByText: FC<HighlightNumberByTextType> = ({ number, content,
             <span className="inline-block text-7xl font-bold">
                 <AnimatedNumber value={number} />+
             </span>
-            <h2 className="text-xl font-medium capitalize text-dark/75">{content}</h2>
+            <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">{content}</h2>
         </div>
     );
 };

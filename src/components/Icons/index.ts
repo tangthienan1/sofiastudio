@@ -3,10 +3,11 @@ import { TwitterIcon } from './Icons';
 import { LinkedInIcon } from './Icons';
 import { PinterestIcon } from './Icons';
 import { DribbbleIcon } from './Icons';
-// import { SunIcon } from './Icons';
-// import { MoonIcon } from './Icons';
+import { SunIcon } from './Icons';
+import { MoonIcon } from './Icons';
 import { CircularTextIcon } from './Icons';
 import { LinkArrowIcon } from './Icons';
+import { DownloadIcon } from './Icons';
 
 export {
     GithubIcon,
@@ -15,7 +16,8 @@ export {
     LinkedInIcon,
     PinterestIcon,
     DribbbleIcon,
-    // SunIcon,
-    // MoonIcon,
+    SunIcon,
+    MoonIcon,
     CircularTextIcon,
+    DownloadIcon,
 };
