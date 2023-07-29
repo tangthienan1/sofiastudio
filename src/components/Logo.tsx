@@ -23,7 +23,7 @@ const Logo = () => {
                     ],
                 }}
             >
-                CB
+                ND
             </MotionLink>
         </motion.div>
     );
