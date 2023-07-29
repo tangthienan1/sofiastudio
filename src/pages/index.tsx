@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FC } from 'react';
 
 import profile from '../../public/images/profile/developer-pic-1.png';
-import lightBuld from '../../public/images/svgs/miscellaneous_icons_1.svg'
+import lightBuld from '../../public/images/svgs/miscellaneous_icons_1.svg';
 
 import AnimatedText from '@/components/AnimatedText';
 import HireMe from '@/components/HireMe';
@@ -42,9 +42,9 @@ const Home: FC = () => {
                     </div>
                 </div>
             </Layout>
-            <HireMe /> 
-            <div className='absolute right-8 inline-block w-24'>
-                <Image src={lightBuld} alt='light' className='w-full h-auto'/>
+            <HireMe />
+            <div className="absolute right-8 inline-block w-24">
+                <Image src={lightBuld} alt="light" className="w-full h-auto" />
             </div>
         </main>
     );

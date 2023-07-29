@@ -1,8 +1,10 @@
-import { ProjectType } from '@/data/projectPageData';
 import Link from 'next/link';
-import React, { FC } from 'react';
+import { FC } from 'react';
+
+import { ProjectType } from '@/data/projectPageData';
+
+import AnimatedImage from '../AnimatedImage';
 import { GithubIcon } from '../Icons';
-import Image from 'next/image';
 
 const FeaturedProjectCard: FC<ProjectType> = ({ type, title, summary, img, link, githubLink }) => {
     return (
@@ -14,7 +16,7 @@ const FeaturedProjectCard: FC<ProjectType> = ({ type, title, summary, img, link,
                 target="_blank"
                 className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
             >
-                <Image src={img} alt={title} className="w-full h-auto" />
+                <AnimatedImage src={img} alt={title} />
             </Link>
 
             <div className="w-1/2 flex flex-col items-start justify-between pl-6">
