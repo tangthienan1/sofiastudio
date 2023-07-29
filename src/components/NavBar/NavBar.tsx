@@ -1,5 +1,5 @@
-import { LocalStorageKeyEnum, ThemeEnum } from '@/constants';
-import { useEffect, useState } from 'react';
+import { ThemeEnum } from '@/constants';
+import useThemeSwitcher from '@/hooks/useThemeSwitcher';
 import {
     DribbbleIcon,
     GithubIcon,
@@ -13,53 +13,8 @@ import Logo from '../Logo';
 import PageNavigator from './PageNavigatorLink';
 import SocialMediaLink from './SocialMediaLink';
 
-type ModeType = ThemeEnum;
-
 const NavBar = () => {
-    const preferDarkQuery = '(prefer-color-schema: dark)';
-    const [mode, setMode] = useState<ModeType | undefined>();
-
-    useEffect(() => {
-        const mediaQuery = window.matchMedia(preferDarkQuery);
-        const userPref = window.localStorage.getItem(LocalStorageKeyEnum.THEME);
-
-        const handleChange = () => {
-            if (userPref) {
-                let check = userPref === ThemeEnum.DARK ? ThemeEnum.DARK : ThemeEnum.LIGHT;
-                setMode(check);
-
-                if (check === ThemeEnum.DARK) {
-                    document.documentElement.classList.add(ThemeEnum.DARK);
-                } else {
-                    document.documentElement.classList.remove(ThemeEnum.DARK);
-                }
-            } else {
-                let check = mediaQuery.matches ? ThemeEnum.DARK : ThemeEnum.LIGHT;
-                setMode(check);
-
-                if (check === ThemeEnum.DARK) {
-                    document.documentElement.classList.add(ThemeEnum.DARK);
-                } else {
-                    document.documentElement.classList.remove(ThemeEnum.DARK);
-                }
-            }
-        };
-        handleChange();
-
-        mediaQuery.addEventListener('change', handleChange);
-
-        return () => mediaQuery.removeEventListener('change', handleChange);
-    }, []);
-
-    useEffect(() => {
-        if (mode === ThemeEnum.DARK) {
-            window.localStorage.setItem(LocalStorageKeyEnum.THEME, ThemeEnum.DARK);
-            document.documentElement.classList.add(ThemeEnum.DARK);
-        } else {
-            window.localStorage.setItem(LocalStorageKeyEnum.THEME, ThemeEnum.LIGHT);
-            document.documentElement.classList.remove(ThemeEnum.DARK);
-        }
-    }, [mode]);
+    const { mode, setMode } = useThemeSwitcher();
 
     return (
         <header

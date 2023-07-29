@@ -5,7 +5,7 @@ type ModeType = ThemeEnum;
 
 const useThemeSwitcher = () => {
     const preferDarkQuery = '(prefer-color-schema: dark)';
-    const [mode, setMode] = useState<ModeType | undefined>();
+    const [mode, setMode] = useState<ModeType>(ThemeEnum.LIGHT);
 
     useEffect(() => {
         const mediaQuery = window.matchMedia(preferDarkQuery);
@@ -33,6 +33,8 @@ const useThemeSwitcher = () => {
             }
         };
 
+        handleChange();
+
         mediaQuery.addEventListener('change', handleChange);
 
         return () => mediaQuery.removeEventListener('change', handleChange);
@@ -49,7 +51,7 @@ const useThemeSwitcher = () => {
         }
     }, [mode]);
 
-    return [mode, setMode];
+    return { mode, setMode };
 };
 
 export default useThemeSwitcher;
