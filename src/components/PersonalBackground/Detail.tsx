@@ -6,12 +6,22 @@ import { BackgroundDetailType } from '@/data/aboutPageData';
 
 export type DetailType = BackgroundDetailType;
 
-const Detail: FC<DetailType> = ({ title, subTitle, subtitleLink, time, address, description }) => {
+const Detail: FC<DetailType> = ({
+    title,
+    subTitle,
+    subtitleLink,
+    time,
+    address,
+    description,
+    teamSize,
+    technologies,
+    modal,
+}) => {
     const ref = useRef(null);
     return (
         <li
             ref={ref}
-            className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
+            className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between md:w-[80%]"
         >
             {/* Cannot pass ref with same prop name with parent */}
             <LiIcon reference={ref} />
@@ -19,10 +29,11 @@ const Detail: FC<DetailType> = ({ title, subTitle, subtitleLink, time, address, 
                 initial={{ y: 50 }}
                 whileInView={{ y: 0 }}
                 transition={{ duration: 0.5, type: 'spring' }}
+                className='flex flex-col gap-1'
             >
                 <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
                     {title}
-                    {subtitleLink && subTitle && (
+                    {subTitle && (
                         <a
                             href={subtitleLink}
                             target="_blank"
@@ -37,6 +48,13 @@ const Detail: FC<DetailType> = ({ title, subTitle, subtitleLink, time, address, 
                     {time} | {address}
                 </span>
                 <p className="font-medium w-full md:text-sm">{description}</p>
+                {teamSize && <p className="font-medium w-full md:text-sm">Team size: {teamSize}</p>}
+                {modal && <p className="font-medium w-full md:text-sm">Modal: {modal}</p>}
+                {technologies && (
+                    <span className="font-medium w-fit md:text-sm inline-block">
+                        Technologies: {technologies}
+                    </span>
+                )}
             </motion.div>
         </li>
     );

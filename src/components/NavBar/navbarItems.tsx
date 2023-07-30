@@ -1,5 +1,9 @@
 import { ReactElement } from 'react';
-import { DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, TwitterIcon } from '../Icons';
+import {
+    FacebookIcon,
+    GithubIcon,
+    LinkedInIcon
+} from '../Icons';
 
 type PageItemType = {
     href: string;
@@ -26,40 +30,40 @@ const navbarItems: NavbarItemsType = {
             href: '/about',
             title: 'About',
         },
-        {
-            href: '/projects',
-            title: 'Project',
-        },
-        {
-            href: '/articles',
-            title: 'Articles',
-        },
+        // {
+        //     href: '/projects',
+        //     title: 'Project',
+        // },
+        // {
+        //     href: '/articles',
+        //     title: 'Articles',
+        // },
     ],
     references: [
         {
-            href: '/',
-            Icon: () => <TwitterIcon />,
+            href: 'https://www.facebook.com/thienan.tang.99',
+            Icon: () => <FacebookIcon />,
         },
         {
-            href: '/',
+            href: 'https://github.com/tangthienan1',
             Icon: () => <GithubIcon />,
         },
         {
-            href: '/',
+            href: 'https://www.linkedin.com/in/tang-thien-an-0691a4195/',
             Icon: () => <LinkedInIcon />,
         },
-        {
-            href: '/',
-            Icon: () => <PinterestIcon />,
-        },
-        {
-            href: '/',
-            Icon: () => <DribbbleIcon />,
-        },
-        {
-            href: '/',
-            Icon: () => <TwitterIcon />,
-        },
+        // {
+        //     href: '/',
+        //     Icon: () => <PinterestIcon />,
+        // },
+        // {
+        //     href: '/',
+        //     Icon: () => <DribbbleIcon />,
+        // },
+        // {
+        //     href: '/',
+        //     Icon: () => <TwitterIcon />,
+        // },
     ],
 };
 export default navbarItems;

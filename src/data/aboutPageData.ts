@@ -7,11 +7,11 @@ export const aboutTitle = 'Passion Fuels Purpose!';
 
 export const highlightContentsData: HighlightContentsType[] = [
     {
-        number: 50,
+        number: 4,
         content: 'satisfied clients',
     },
     {
-        number: 40,
+        number: 4,
         content: 'projects completed',
     },
     {
@@ -21,20 +21,20 @@ export const highlightContentsData: HighlightContentsType[] = [
 ];
 
 export const biographyContentsData: string[] = [
-    `Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion
+    `Hi, I'm Andy Tang, a full-stack web developer with a passion
    for creating beautiful, functional, and user-centered digital
-   experiences. With 4 years of experience in the field. I am always
-   looking for new and innovative ways to bring my clients' visions to
+   experiences. With 3 years of experience in the field. I am always
+   looking for new and innovative ways to bring my client's visions to
    life.`,
-    `I believe that design is about more than just making things look
-  pretty – it's about solving problems and creating intuitive,
+    `I believe that develop is about more than just making application run
+    – it's about solving problems and easy to maintain later,
   enjoyable experiences for users.`,
     `
-  Whether I'm working on a website, mobile app, or other digital
-  product, I bring my commitment to design excellence and
-  user-centered thinking to every project I work on. I look forward to
+  Whether I'm working on a website, mobile app, I bring commitment to clean and maintainable
+   to every project I work on. I look forward to
   the opportunity to bring my skills and passion to your next project. 
   `,
+    `Thanks you!!!`,
 ];
 
 export type BackgroundDetailType = {
@@ -42,78 +42,70 @@ export type BackgroundDetailType = {
     subTitle?: string;
     subtitleLink?: string;
     time: string;
-    address: string;
-    description: string;
+    address?: string;
+    description?: string;
+    teamSize?: number;
+    technologies?: string;
+    modal?: string;
 };
 export const experiences: BackgroundDetailType[] = [
     {
         title: 'Software Engineer',
-        subTitle: 'Google',
-        time: '2022-Present',
-        address: 'Mountain View, CA',
+        subTitle: 'NAB',
+        time: 'Dec 2022-Present',
+        address: 'Ho Chi Minh, Viet Nam',
+        teamSize: 12,
+        modal: 'Agile/Scrum',
+        technologies:
+            'ReactJS, Jest, RTL, Git, Rally, TypeSCript, GraphQL, Micro front-end, Bff, A11y, AWS, Jenkins, Micro FE',
         description:
-            "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
-        subtitleLink: 'www.google.com',
+            'For full-time official work, my team collaborated with Australian and Indian teams. My squad takes responsibility for a mini-app. My role is to implement the UI within integrate BioCatch and a11y, create resolvers on BFF, write queries or mutations with Apollo, and Spike and implement new functions, mentor new members, and present any new feature or new archive to the whole team. Take sharing section, Own some training class in office...',
+        subtitleLink: 'https://www.nab.com.au/',
     },
     {
-        title: 'Intern',
-        subTitle: 'Facebook',
-        time: 'Summer 2021',
-        address: 'Menlo Park, CA.',
-        description:
-            'Worked on a team responsible for developing a new mobile app feature that allowed users to create and share short-form video content, including designing and implementing a new user interface and developing the backend infrastructure to support the feature.',
-        subtitleLink: 'www.google.com',
+        title: 'Software Engineer',
+        subTitle: 'FPT',
+        time: 'Sep 2020- Dec 2021',
+        address: 'Ho Chi Minh, Viet Nam',
+        teamSize: 10,
+        description: 'Worked on a team responsible for developing a new mobile app about Health.',
+        modal: 'Agile/Scrum',
+        technologies: 'React native, Jest, Enzyme, Redux, Git, Jira, TypeScript, GraphQL',
+        subtitleLink: 'https://fptsoftware.com/',
     },
     {
         title: 'Software Developer',
-        subTitle: 'Amazon',
-        time: '2020-2021',
-        address: 'Seattle, WA.',
-        description:
-            "Worked on a team responsible for developing Amazon's mobile app, including implementing new features such as product recommendations and user reviews, and optimizing the app's performance and reliability.",
-        subtitleLink: 'www.google.com',
-    },
-    {
-        title: 'Software Developer Intern',
-        subTitle: 'Microsoft',
-        time: 'Summer 2019',
-        address: 'Redmond, WA.',
-        description:
-            "Worked on a team responsible for developing new features for Microsoft's Windows operating system, including implementing a new user interface for a system settings panel and optimizing the performance of a core system component.",
-        subtitleLink: 'www.google.com',
+        subTitle: 'Self-learn',
+        time: '2019',
+        address: 'Ho Chi Minh, Viet Nam.',
+        description: 'Build an mobile application to tracking finance during trip',
+        teamSize: 1,
+        technologies: 'React native, AWS amplify',
     },
     {
         title: 'Teaching Assistant',
-        subTitle: 'MIT',
-        time: 'Fall 2018',
-        address: 'Massachusetts Ave, Cambridge, MA.',
+        subTitle: 'FPT Greenwich',
+        time: '2018',
+        address: 'Ho Chi Minh, Viet Nam.',
         description:
             'Assisted in teaching a course on computer programming, held office hours to help students with assignments, and graded exams and assignments.',
-        subtitleLink: 'www.google.com',
     },
 ];
 
 export const educations: BackgroundDetailType[] = [
     {
-        title: 'Bachelor Of Science In Computer Science',
-        time: '2016-2020',
-        address: 'Massachusetts Institute Of Technology (MIT)',
-        description:
-            'Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence.',
-    },
-
-    {
-        title: 'Master Of Computer Science',
-        time: '2020-2022',
-        address: 'Stanford University',
-        description:
-            "Completed a master's project on deep learning, developing a new neural network architecture for natural language understanding.",
+        title: 'Amazon Web Services Cloud Practitioner',
+        subTitle: 'Credential',
+        subtitleLink: '/AWS Certified Cloud Practitioner certificate.pdf',
+        time: 'Apr 2023- Apr 2026',
+        address: 'Amazon Web Services (AWS)',
     },
     {
-        title: 'Online Coursework',
+        title: 'Graph Developer - Associate',
+        subTitle: 'Credential',
+        subtitleLink:
+            'https://www.apollographql.com/tutorials/certifications/51793318-c989-4c57-a9f3-ee0c0310144f',
         time: '2016-2020',
-        address: 'Coursera And EdX',
-        description:
-            'Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering.',
+        address: 'Apollo GraphQL',
     },
 ];

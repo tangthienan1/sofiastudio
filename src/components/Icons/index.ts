@@ -8,6 +8,7 @@ import { MoonIcon } from './Icons';
 import { CircularTextIcon } from './Icons';
 import { LinkArrowIcon } from './Icons';
 import { DownloadIcon } from './Icons';
+import { FacebookIcon } from './Icons';
 
 export {
     GithubIcon,
@@ -20,4 +21,5 @@ export {
     MoonIcon,
     CircularTextIcon,
     DownloadIcon,
+    FacebookIcon,
 };

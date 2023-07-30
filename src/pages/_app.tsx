@@ -6,6 +6,7 @@ import { AnimatePresence } from 'framer-motion';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { FC } from 'react';
+import { motion } from 'framer-motion';
 
 type AppType = {
     Component: any;
@@ -25,7 +26,7 @@ const App: FC<AppType> = ({ Component, pageProps }) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/logo.jpg" />
             </Head>
-            <main
+            <motion.main
                 className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}
             >
                 <NavBar />
@@ -33,7 +34,7 @@ const App: FC<AppType> = ({ Component, pageProps }) => {
                     <Component key={router.asPath} {...pageProps} />
                 </AnimatePresence>
                 <Footer />
-            </main>
+            </motion.main>
         </>
     );
 };

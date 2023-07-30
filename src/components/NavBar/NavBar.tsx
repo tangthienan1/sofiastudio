@@ -24,7 +24,6 @@ const NavBar = () => {
             />
 
             <DesktopNavbar onDarkModeClick={onDarkModeClick} mode={mode} />
-            {/* Mobile Nav */}
             {isBurgerOpen && (
                 <MobileNavbar
                     onDarkModeClick={onDarkModeClick}
@@ -33,7 +32,7 @@ const NavBar = () => {
                 />
             )}
             <div className="absolute left-[50%] top-2 translate-x-[-50%]">
-                <Logo onClick={() => setIsBurgerOpen((prev) => !prev)} />
+                <Logo onClick={() => setIsBurgerOpen(false)} />
             </div>
         </header>
     );

@@ -4,7 +4,7 @@ import { MoonIcon, SunIcon } from '../Icons';
 
 type DarkModeBtnType = {
     onClick: () => void;
-    mode: ThemeEnum;
+    mode: ThemeEnum
 };
 
 const DarkModeBtn: FC<DarkModeBtnType> = ({ onClick, mode }) => {

@@ -6,13 +6,13 @@ import CustomHead from '@/components/CustomHead';
 import HighlightNumberByText from '@/components/HighlightNumberByText';
 import Layout from '@/components/Layout';
 import PersonalBackground from '@/components/PersonalBackground';
-import experiences from '@/components/PersonalBackground/experiences';
 import Skills from '@/components/Skills';
 
 import {
     aboutTitle,
     biographyContentsData,
     educations,
+    experiences,
     highlightContentsData,
 } from '@/data/aboutPageData';
 
@@ -45,7 +45,7 @@ const About = () => {
                             <Image
                                 src={profilePic}
                                 alt="Andy"
-                                className="w-ful h-auto rounded-2xl"
+                                className="w-ful h-auto rounded-2xl m-auto"
                                 priority
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                             />

@@ -23,16 +23,22 @@ const Skills = () => {
                     Web
                 </motion.div>
 
-                <SkillItem name={'HTML'} x={'-25vw'} y={'2vw'} />
-                <SkillItem name={'CSS'} x={'-5vw'} y={'-10vw'} />
-                <SkillItem name={'Javascript'} x={'20vw'} y={'6vw'} />
-                <SkillItem name={'ReactJS'} x={'0vw'} y={'12vw'} />
-                <SkillItem name={'NextJS'} x={'-20vw'} y={'-15vw'} />
+                <SkillItem name={'RTL'} x={'0vw'} y={'-19vw'} />
+                <SkillItem name={'NextJS'} x={'-17vw'} y={'-17vw'} />
+                <SkillItem name={'TypeScript'} x={'-33vw'} y={'-3vw'} />
+                <SkillItem name={'React Native'} x={'-23vw'} y={'-9vw'} />
+                <SkillItem name={'Jest'} x={'-20vw'} y={'2vw'} />
+                <SkillItem name={'CSS'} x={'-5vw'} y={'-11vw'} />
+                <SkillItem name={'HTML'} x={'-32vw'} y={'9vw'} />
+                <SkillItem name={'Javascript'} x={'15vw'} y={'11vw'} />
+                <SkillItem name={'Micro FE'} x={'33vw'} y={'8vw'} />
+                <SkillItem name={'AWS'} x={'-23vw'} y={'18vw'} />
+                <SkillItem name={'ReactJS'} x={'-10vw'} y={'12vw'} />
+                <SkillItem name={'NodeJS'} x={'5vw'} y={'19vw'} />
+                <SkillItem name={'Express'} x={'20vw'} y={'19vw'} />
                 <SkillItem name={'GatsbyJS'} x={'15vw'} y={'-12vw'} />
-                <SkillItem name={'Web Design'} x={'32vw'} y={'-5vw'} />
-                <SkillItem name={'Figma'} x={'0vw'} y={'-20vw'} />
-                <SkillItem name={'AWS'} x={'-25vw'} y={'18vw'} />
-                <SkillItem name={'NodeJS'} x={'18vw'} y={'18vw'} />
+                <SkillItem name={'A11y'} x={'29vw'} y={'-5vw'} />
+                <SkillItem name={'GraphQL'} x={'20vw'} y={'2vw'} />
             </div>
         </>
     );
