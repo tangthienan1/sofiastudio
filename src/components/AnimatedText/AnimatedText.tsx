@@ -16,7 +16,9 @@ const AnimatedText: FC<AnimatedTextType> = ({ text, className }) => {
             }
         >
             <motion.h1
-                className={`inline-block w-full text-dark font-bold capitalize text-8xl dark:text-light ${className}`}
+                className={`inline-block w-full text-dark font-bold capitalize text-8xl dark:text-light 
+                lg:!text-7xl sm:!text-6xl xs:!text-4xl
+                ${className}`}
                 variants={quote}
                 initial="initial"
                 animate="animate"
