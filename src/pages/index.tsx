@@ -34,7 +34,9 @@ const Home: FC = () => {
                                 text={landingPageTitle}
                                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center "
                             />
-                            <p className="my-4 text-base font-medium md:text-sm sm:text-xs">{landingPageDescription}</p>
+                            <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
+                                {landingPageDescription}
+                            </p>
                             <div className="flex items-center self-start mt-2 lg:self-center">
                                 <ButtonAsLink
                                     href={'/Resume-Tang-Thien-An.pdf'}

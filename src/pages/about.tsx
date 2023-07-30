@@ -2,12 +2,12 @@
 import Image from 'next/image';
 
 import AnimatedText from '@/components/AnimatedText';
+import CustomHead from '@/components/CustomHead';
 import HighlightNumberByText from '@/components/HighlightNumberByText';
 import Layout from '@/components/Layout';
 import PersonalBackground from '@/components/PersonalBackground';
 import experiences from '@/components/PersonalBackground/experiences';
 import Skills from '@/components/Skills';
-import CustomHead from '@/components/CustomHead';
 
 import {
     aboutTitle,
@@ -24,10 +24,7 @@ const About = () => {
             <CustomHead title="About Page" content="any" />
             <main className="flex w-full flex-col items-center justify-center dark:text-light">
                 <Layout>
-                    <AnimatedText
-                        text={aboutTitle}
-                        className="mb-16 sm:mb-8"
-                    />
+                    <AnimatedText text={aboutTitle} className="mb-16 sm:mb-8" />
                     <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
                         <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
