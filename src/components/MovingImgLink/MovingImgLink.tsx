@@ -10,7 +10,6 @@ type MovingImgLinkType = {
     link: string;
     title: string;
     className?: string;
-    imgClassName?: string;
 };
 
 const MovingImgLink: FC<MovingImgLinkType> = ({
@@ -18,7 +17,6 @@ const MovingImgLink: FC<MovingImgLinkType> = ({
     img,
     link,
     className = 'capitalize text-xl font-semibold hover:underline',
-    imgClassName = 'z-10 w-96 h-auto hidden absolute rounded-lg',
 }) => {
     const x = useMotionValue(0);
     const y = useMotionValue(0);
@@ -59,7 +57,7 @@ const MovingImgLink: FC<MovingImgLinkType> = ({
                 ref={imgRef}
                 src={img}
                 alt={title}
-                className={imgClassName}
+                className="z-10 w-96 h-auto hidden absolute rounded-lg md:!hidden"
             />
         </Link>
     );

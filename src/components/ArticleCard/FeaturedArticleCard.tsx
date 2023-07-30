@@ -17,7 +17,7 @@ const FeaturedArticleCard: FC<ArticleType> = ({ img, title, time, summary, link 
                 {img && <AnimatedImage src={img} alt={title} />}
             </Link>
             <Link href={link} target="_blank">
-                <h2 className="capitalize text-2xl font-bold my-2 hover:underline mt-4l">
+                <h2 className="capitalize text-2xl font-bold my-2 hover:underline mt-4 xs:text-lg">
                     {title}
                 </h2>
             </Link>

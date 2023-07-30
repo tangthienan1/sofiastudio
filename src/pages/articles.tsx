@@ -15,7 +15,7 @@ const Articles = () => {
             <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
                 <Layout className="pt-16">
                     <AnimatedText text={articlesPageTitle} className="mb-16" />
-                    <div className="grid grid-cols-2 gap-16">
+                    <div className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
                         {featuredArticles.map((article, index) => (
                             <div className="col-span-1" key={index}>
                                 <FeaturedArticleCard {...article} />

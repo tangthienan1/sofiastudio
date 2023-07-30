@@ -1,10 +1,13 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { FC } from 'react';
 import { motion } from 'framer-motion';
 
 const MotionLink = motion(Link);
 
-const Logo = () => {
+type LogoType = {
+    onClick: () => void;
+};
+const Logo: FC<LogoType> = ({ onClick }) => {
     return (
         <motion.div className="flex items-center justify-center mt-2">
             <MotionLink
@@ -22,6 +25,7 @@ const Logo = () => {
                         '#121212',
                     ],
                 }}
+                onClick={onClick}
             >
                 ND
             </MotionLink>

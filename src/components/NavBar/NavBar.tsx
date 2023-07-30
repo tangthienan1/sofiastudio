@@ -27,17 +27,13 @@ const NavBar = () => {
             {/* Mobile Nav */}
             {isBurgerOpen && (
                 <MobileNavbar
-                    onDarkModeClick={() =>
-                        setMode((prevMode) =>
-                            prevMode === ThemeEnum.LIGHT ? ThemeEnum.DARK : ThemeEnum.LIGHT
-                        )
-                    }
+                    onDarkModeClick={onDarkModeClick}
                     mode={mode}
                     toggleMode={() => setIsBurgerOpen((prev) => !prev)}
                 />
             )}
             <div className="absolute left-[50%] top-2 translate-x-[-50%]">
-                <Logo />
+                <Logo onClick={() => setIsBurgerOpen((prev) => !prev)} />
             </div>
         </header>
     );
