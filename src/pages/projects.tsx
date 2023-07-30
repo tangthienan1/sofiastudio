@@ -10,9 +10,12 @@ const Projects = () => {
             <CustomHead title="project" content="any" />
             <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
                 <Layout className="pt-16">
-                    <AnimatedText text={projectPageTitle} className="mb-16 " />
+                    <AnimatedText
+                        text={projectPageTitle}
+                        className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+                    />
 
-                    <div className="grid grid-cols-12 gap-24 gap-y-32">
+                    <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
                         {projects.map((project, index) => {
                             if (index === 0) {
                                 return (
@@ -22,7 +25,7 @@ const Projects = () => {
                                 );
                             }
                             return (
-                                <div className="col-span-6" key={index}>
+                                <div className="col-span-6 sm:col-span-12" key={index}>
                                     <SimpleProjectCard {...project} />
                                 </div>
                             );
