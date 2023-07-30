@@ -55,7 +55,7 @@ const Home: FC = () => {
                     </div>
                 </Layout>
                 <HireMe />
-                <div className="absolute right-8 inline-block w-24 md:hidden">
+                <div className="absolute right-8 bottom-0 inline-block w-24 md:hidden">
                     <Image src={lightBuld} alt="light" className="w-full h-auto" />
                 </div>
             </main>
