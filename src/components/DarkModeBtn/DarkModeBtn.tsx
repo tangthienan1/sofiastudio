@@ -16,9 +16,9 @@ const DarkModeBtn: FC<DarkModeBtnType> = ({ onClick, mode }) => {
                     `}
         >
             {mode === ThemeEnum.DARK ? (
-                <SunIcon className="fill-dark" />
+                <SunIcon className="fill-dark w-6 h-auto" />
             ) : (
-                <MoonIcon className="fill-dark" />
+                <MoonIcon className="fill-dark w-6 h-auto" />
             )}
         </button>
     );
