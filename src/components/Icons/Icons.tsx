@@ -102,8 +102,8 @@ export const DribbbleIcon: FC<IconType> = ({ className, ...rest }) => (
 export const SunIcon: FC<IconType> = ({ className, ...rest }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width="1em"
+        height="1em"
         viewBox="0 0 24 24"
         {...rest}
         className={getIconClassName(className)}
@@ -238,8 +238,8 @@ export const SunIcon: FC<IconType> = ({ className, ...rest }) => (
 export const MoonIcon: FC<IconType> = ({ className, ...rest }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width="1em"
+        height="1em"
         viewBox="0 0 24 24"
         {...rest}
         className={getIconClassName(className)}
