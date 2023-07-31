@@ -3,7 +3,7 @@ export type HighlightContentsType = {
     content: string;
 };
 
-export const aboutTitle = `I'm not different, I'm different!`;
+export const aboutTitle = `I'm not different, I'm the different!`;
 
 export const highlightContentsData: HighlightContentsType[] = [
     {
