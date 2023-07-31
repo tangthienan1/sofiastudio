@@ -21,7 +21,7 @@ export const highlightContentsData: HighlightContentsType[] = [
 ];
 
 export const biographyContentsData: string[] = [
-    `Hi, I'm Andy Tang, a full-stack web developer with a passion
+    `Hi, I'm Andy Tang (Thien An Tang), a full-stack web developer with a passion
    for creating beautiful, functional, and user-centered digital
    experiences. With 3 years of experience in the field. I am always
    looking for new and innovative ways to bring my client's visions to
@@ -75,7 +75,16 @@ export const experiences: BackgroundDetailType[] = [
     },
     {
         title: 'Software Developer',
-        subTitle: 'Self-learn',
+        subTitle: 'Self-purpose',
+        time: '2023',
+        address: 'Ho Chi Minh, Viet Nam.',
+        description: 'Build my own portfolio',
+        teamSize: 1,
+        technologies: 'NextJS, Framer motion, Typescript, Tailwind',
+    },
+    {
+        title: 'Software Developer',
+        subTitle: 'Self-purpose',
         time: '2019',
         address: 'Ho Chi Minh, Viet Nam.',
         description: 'Build an mobile application to tracking finance during trip',
