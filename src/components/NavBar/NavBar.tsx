@@ -1,38 +1,25 @@
 import { ThemeEnum } from '@/constants';
 import useThemeSwitcher from '@/hooks/useThemeSwitcher';
-import { useState } from 'react';
-import BurgerBtn from '../BurgerBtn';
 import Logo from '../Logo';
 import DesktopNavbar from './DesktopNavbar';
 import MobileNavbar from './MobileNavbar';
 
 const NavBar = () => {
     const { mode, setMode } = useThemeSwitcher();
-    const [isBurgerOpen, setIsBurgerOpen] = useState<boolean>(false);
 
     const onDarkModeClick = () =>
         setMode((prevMode) => (prevMode === ThemeEnum.LIGHT ? ThemeEnum.DARK : ThemeEnum.LIGHT));
+
     return (
         <header
             className="w-full px-32 py-8 font-medium flex items-center justify-between
         dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8"
         >
-            <BurgerBtn
-                className="flex-col justify-center items-center hidden lg:flex"
-                onClick={() => setIsBurgerOpen((prev) => !prev)}
-                isOpen={isBurgerOpen}
-            />
 
             <DesktopNavbar onDarkModeClick={onDarkModeClick} mode={mode} />
-            {isBurgerOpen && (
-                <MobileNavbar
-                    onDarkModeClick={onDarkModeClick}
-                    mode={mode}
-                    toggleMode={() => setIsBurgerOpen((prev) => !prev)}
-                />
-            )}
+            <MobileNavbar onDarkModeClick={onDarkModeClick} mode={mode} />
             <div className="absolute left-[50%] top-2 translate-x-[-50%]">
-                <Logo onClick={() => setIsBurgerOpen(false)} />
+                <Logo onClick={() => console.log(false)} />
             </div>
         </header>
     );
