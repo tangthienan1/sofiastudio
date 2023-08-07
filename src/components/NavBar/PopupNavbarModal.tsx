@@ -16,10 +16,11 @@ type MobileNavbarType = {
 const PopupNavbarModal: FC<MobileNavbarType> = ({ toggleMode, onDarkModeClick, mode, className }) => {
     return (
         <motion.div
-            initial={{ scale: 0, opacity: 0, x: '-50%', y: '-50%' }}
-            animate={{ scale: 1, opacity: 1 }}
+            initial={{ y: '50%', x: '-50%' }}
+            animate={{ y: '-50%' }}
+            exit={{ y: ['-50%', '50%'] }}
             className={`min-w-[70vw] sm:min-w-[90vw] flex justify-between items-center flex-col
-            fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 py-32 bg-dark/90 dark:bg-light/75
+            fixed top-1/2 left-1/2 py-32 bg-dark/90 dark:bg-light/75
             rounded-lg z-50 backdrop-blur-md ${className}`}
         >
             <nav className="flex items-center flex-col justify-center">
