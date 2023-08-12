@@ -13,21 +13,22 @@ const Logo: FC<LogoType> = ({ onClick }) => {
             <MotionLink
                 href="/"
                 className="z-20 w-16 h-16 bg-black text-light flex items-center justify-center rounded-full text-2xl
-                font-bold border border-solid border-transparent dark:border-light"
+                font-bold border border-solid border-transparent "
                 whileHover={{
                     scale: 1.25,
                     backgroundColor: [
-                        '#121212',
-                        '#FE0000',
-                        '#FFF205',
-                        '#01FFF4',
-                        '#7CFF01',
-                        '#01FFF4',
-                        '#FFF205',
-                        '#FE0000',
-                        '#121212',
+                        '#1b1b1b',
+                        '#de8c9d',
+                        '#fe2858',
+                        '#2af0ea',
+                        '#397684',
+                        '#2af0ea',
+                        '#fe2858',
+                        '#de8c9d',
+                        '#1b1b1b',
                     ],
-                    transition: { duration: 1, ease: 'easeInOut' },
+                    borderColor: 'white',
+                    transition: { duration: 1 },
                 }}
                 onClick={onClick}
             >
