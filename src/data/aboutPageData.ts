@@ -21,7 +21,7 @@ export const highlightContentsData: HighlightContentsType[] = [
 ];
 
 export const biographyContentsData: string[] = [
-    `Hi, I'm Andy Tang (Thien An Tang), a full-stack web developer with a passion
+    `Hi, I'm Andy Tang or ND for short (Thien An Tang), a full-stack web developer with a passion
    for creating beautiful, functional, and user-centered digital
    experiences. With 3 years of experience in the field. I am always
    looking for new and innovative ways to bring my client's visions to
