@@ -24,7 +24,7 @@ const App: FC<AppType> = ({ Component, pageProps }) => {
                     content="This is Andy Tang a software developer Portfolio"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/logo.jpg" />
+                <link rel="icon" href="/logo.png" />
             </Head>
             <motion.main
                 className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}

@@ -16,7 +16,7 @@ import {
     highlightContentsData,
 } from '@/data/aboutPageData';
 
-import profilePic from '../../public/images/profile/developer-pic-2.jpg';
+import profilePic from '../../public/images/profile/developer-pic-2.png';
 
 const About = () => {
     return (
