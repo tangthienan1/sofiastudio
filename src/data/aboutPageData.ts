@@ -57,7 +57,7 @@ export const experiences: BackgroundDetailType[] = [
         teamSize: 12,
         modal: 'Agile/Scrum',
         technologies:
-            'ReactJS, Jest, RTL, Git, Rally, TypeSCript, GraphQL, Micro front-end, Bff, A11y, AWS, Jenkins, Micro FE',
+            'ReactJS, Jest, RTL, Git, Rally, TypeSCript, GraphQL, Backend for frontend, A11y, AWS, Jenkins, Micro FE',
         description:
             'For full-time official work, my team collaborated with Australian and Indian teams. My squad takes responsibility for a mini-app. My role is to implement the UI within integrate BioCatch and a11y, create resolvers on BFF, write queries or mutations with Apollo, and Spike and implement new functions, mentor new members, and present any new feature or new archive to the whole team. Take sharing section, Own some training class in office...',
         subtitleLink: 'https://www.nab.com.au/',
