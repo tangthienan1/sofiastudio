@@ -7,8 +7,8 @@ export const aboutTitle = `I'm not different, I'm the different!`;
 
 export const highlightContentsData: HighlightContentsType[] = [
     {
-        number: 4,
-        content: 'satisfied clients',
+        number: 20,
+        content: 'age',
     },
     {
         number: 4,
