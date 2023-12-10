@@ -17,6 +17,9 @@ module.exports = {
                 light: '#f5f5f5',
                 primary: '#B63E96',
                 primaryDark: '#58E6D9',
+                black: '#010101',
+                blue: '#69C9D0',
+                red: '#EE1D52'
             },
             backgroundImage: {
                 circularLight:

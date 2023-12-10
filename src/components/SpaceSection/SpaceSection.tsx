@@ -8,6 +8,7 @@ import khonggianngoai5 from '../../../public/images/studio/khonggianngoai5.jpg';
 import khonggiantrong1 from '../../../public/images/studio/khonggiantrong1.jpg';
 import khonggiantrong2 from '../../../public/images/studio/khonggiantrong2.jpg';
 import AnimatedImage from '../AnimatedImage';
+import Text from '../Text';
 
 type SpaceSectionType = {
     title: string;
@@ -27,16 +28,16 @@ const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
                     src={khonggianngoai1}
                 />
                 <div>
-                    <h2 className="text-2xl font-bold mb-4">Không gian ngoài .</h2>
-                    <p className="mb-4">
+                    <h2 className="text-2xl font-bold mb-4">Không gian ngoài.</h2>
+                    <Text className="mb-4">
                         Chiếm phần lớn diện tích của studio, có thể set up để livestream hoặc ghi
                         hình các buổi phỏng vấn, podcast,...
-                    </p>
-                    <p>
-                        Taking up a significant portion of the studio space, it can be set up for
-                        livestreaming or recording various activities such as interviews, podcasts,
-                        and more.
-                    </p>
+                    </Text>
+                    <Text>
+                        Taking up the major of space in the studio space, it can be set up for
+                        livestreaming or recording various activities such as interviews,
+                        podcasts,...
+                    </Text>
                     <AnimatedImage
                         alt="out space 2"
                         className="w-full h-auto mt-4 object-cover aspect-square"
@@ -52,14 +53,14 @@ const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
                         src={khonggianngoai3}
                     />
                     <h3 className="text-xl font-bold mb-2">Không gian trong phòng.</h3>
-                    <p className="mb-4">
+                    <Text className="mb-4">
                         Diện tích không to, thể hiện sự ấm cúng, thích hợp để chụp cá nhân, thể hiện
                         rõ hơn nét cá tính
-                    </p>
-                    <p>
+                    </Text>
+                    <Text>
                         With a cozy, intimate space, it's perfect for personal photoshoots, allowing
                         one's personality to shine through more distinctly.
-                    </p>
+                    </Text>
                 </div>
 
                 <div>
@@ -112,10 +113,10 @@ const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
                         src={khonggiantrong2}
                     />
                     <h3 className="text-xl font-bold mt-4 mb-2">CREATE YOUR PORTFOLIO</h3>
-                    <p>
+                    <Text>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
                         luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                    </p>
+                    </Text>
                 </div>
             </section>
         </div>

@@ -12,7 +12,7 @@ const AnimatedText: FC<AnimatedTextType> = ({ text, className }) => {
     return (
         <div
             className={
-                'lw-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden sm:p-0'
+                'w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden sm:p-0'
             }
         >
             <motion.h1

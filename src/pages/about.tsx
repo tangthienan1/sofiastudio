@@ -1,15 +1,13 @@
-/* eslint-disable react/no-unescaped-entities */
-
 import AnimatedText from '@/components/AnimatedText';
 import CustomHead from '@/components/CustomHead';
 import Layout from '@/components/Layout';
 import SpaceSection from '@/components/SpaceSection';
 
-import { aboutTitle, educations, experiences } from '@/data/aboutPageData';
+import { aboutTitle } from '@/data/aboutPageData';
 
-import AnimatedImage from '@/components/AnimatedImage';
 import BottomFixedBtn from '@/components/BottomFixedBtn';
-import priceList from '../../public/images/ref/bangiaonly.png';
+import PriceTable from '@/components/PriceTable';
+import Text from '@/components/Text';
 
 const About = () => {
     return (
@@ -20,7 +18,7 @@ const About = () => {
                     <AnimatedText text={aboutTitle} className="mb-16 sm:mb-8" />
                     <div className="flex items-center w-full lg:flex-col gap-16">
                         <div className="w-1/2 md:w-full">
-                            <AnimatedImage src={priceList} alt="bang gia" />
+                            <PriceTable />
                         </div>
 
                         <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center gap-3">
@@ -28,16 +26,19 @@ const About = () => {
                                 text="**Ekip tối đa 5 người, từ người thứ 6 sẽ phụ thu 50.000vnd/ng."
                                 className="!text-3xl !text-left xl:!text-2xl lg:!text-center "
                             />
-                            <div>
-                                <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
+                            <div className="text-left">
+                                <Text className="my-4 font-medium">
                                     Hỗ trợ phông nền, tấm hất sáng 2 màu (bạc và vàng), đèn chụp ảnh
                                     chuyên nghiệp 150W (cao 2m1), gậy chụp ảnh, đạo cụ bàn ghế, bàn
                                     ủi hơi nước, sào treo đồ, máy lạnh, wc riêng.
-                                </p>
-                                <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                                    Khách cần dời sofa/gương vui lòng gọi ‭094 5355824‬ ( Hoàng ) để
-                                    được hổ trợ.
-                                </p>
+                                </Text>
+                                <Text className="my-4 font-medium">
+                                    Khách cần dời sofa/gương vui lòng gọi{' '}
+                                    <a className="underline" href="tel:0945355824">
+                                        ‭094 5355824‬
+                                    </a>
+                                    ( Hoàng ) để được hổ trợ.
+                                </Text>
                             </div>
 
                             <AnimatedText
@@ -45,22 +46,25 @@ const About = () => {
                                 className="!text-3xl !text-left xl:!text-2xl lg:!text-center "
                             />
                             <div>
-                                <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
+                                <Text className="my-4 font-medium">
                                     We provide support for background setup, with a two-tone
                                     backdrop (silver and gold), professional photography lights of
                                     150W (height 2.1m), camera tripod, props, chairs, steam ironing
                                     table, clothes rack, AC, and a private restroom.
-                                </p>
-                                <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                                    If you need to move the sofa or mirror, please call ‭094 5355824‬
+                                </Text>
+                                <Text className="my-4 font-medium">
+                                    If you need to move the sofa or mirror, please call{' '}
+                                    <a className="underline" href="tel:0945355824">
+                                        ‭094 5355824‬
+                                    </a>{' '}
                                     (Hoàng) for assistance.
-                                </p>
+                                </Text>
                             </div>
                         </div>
                     </div>
                     <SpaceSection title="Không gian" />
                 </Layout>
-                <BottomFixedBtn/>
+                <BottomFixedBtn />
             </main>
         </>
     );
