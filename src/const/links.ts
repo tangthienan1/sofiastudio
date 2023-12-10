@@ -1,1 +1,1 @@
-export const FACEBOOK_URL = process.env.FACEBOOK_URL || 'https://m.me/softiastudioxinhxinh';
+export const FACEBOOK_URL = 'https://www.facebook.com/softiastudioxinhxinh';

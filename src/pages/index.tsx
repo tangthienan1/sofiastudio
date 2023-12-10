@@ -1,11 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FC } from 'react';
+import { FC, useRef } from 'react';
 
 import cameraIcon from '../../public/images/svgs/flat-camera.svg';
 
 import AnimatedText from '@/components/AnimatedText';
-import BottomFixedBtn from '@/components/BottomFixedBtn';
 import ButtonAsLink from '@/components/ButtonAsLink';
 import CustomHead from '@/components/CustomHead';
 import Layout from '@/components/Layout';
@@ -13,6 +12,8 @@ import { FACEBOOK_URL } from '@/const/links';
 import { landingPageDescription, landingPageTitle } from '@/data/landingPageData';
 
 const Home: FC = () => {
+    const videoRef: any = useRef();
+
     return (
         <>
             <CustomHead title={'Sofia Studio'} content={'Sofia Studio'} />
@@ -26,8 +27,11 @@ const Home: FC = () => {
                             >
                                 <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
                                 <video
+                                    onClick={() => (videoRef.current.muted = !videoRef.current.muted)}
+                                    ref={videoRef}
                                     autoPlay
-                                    loop
+                                    playsInline
+                                    muted
                                     className="w-ful h-auto rounded-2xl m-auto"
                                 >
                                     <source src="/studio.mp4" type="video/mp4" />
@@ -44,7 +48,7 @@ const Home: FC = () => {
                                 <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                                     {landingPageDescription}
                                 </p>
-                                <p className='text-end'>--Một cổ nhân nào đó--</p>
+                                <p className="text-end">--Một cổ nhân nào đó--</p>
                             </div>
                             <div className="flex items-center mt-6 lg:self-center">
                                 <ButtonAsLink

@@ -3,8 +3,10 @@ import useThemeSwitcher from '@/hooks/useThemeSwitcher';
 import Logo from '../Logo';
 import DesktopNavbar from './DesktopNavbar';
 import MobileNavbar from './MobileNavbar';
+import { useRouter } from 'next/navigation';
 
 const NavBar = () => {
+    const router = useRouter();
     const { mode, setMode } = useThemeSwitcher();
 
     const onDarkModeClick = () =>
@@ -19,7 +21,7 @@ const NavBar = () => {
             <DesktopNavbar onDarkModeClick={onDarkModeClick} mode={mode} />
             <MobileNavbar onDarkModeClick={onDarkModeClick} mode={mode} />
             <div className="absolute left-[50%] top-2 translate-x-[-50%] h-full">
-                <Logo onClick={() => console.log(false)} />
+                <Logo onClick={() => router.push('/')} />
             </div>
         </header>
     );
