@@ -3,7 +3,7 @@
 import AnimatedText from '@/components/AnimatedText';
 import CustomHead from '@/components/CustomHead';
 import Layout from '@/components/Layout';
-import PersonalBackground from '@/components/PersonalBackground';
+import SpaceSection from '@/components/SpaceSection';
 
 import { aboutTitle, educations, experiences } from '@/data/aboutPageData';
 
@@ -58,7 +58,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <PersonalBackground title="Không gian" details={experiences} />
+                    <SpaceSection title="Không gian" />
                 </Layout>
                 <BottomFixedBtn/>
             </main>

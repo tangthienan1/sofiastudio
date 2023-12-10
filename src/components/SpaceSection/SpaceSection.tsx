@@ -1,5 +1,4 @@
 import { FC, useRef } from 'react';
-import { DetailType } from './Detail';
 
 import khonggianngoai1 from '../../../public/images/studio/khonggianngoai1.jpg';
 import khonggianngoai2 from '../../../public/images/studio/khonggianngoai2.jpg';
@@ -10,11 +9,10 @@ import khonggiantrong1 from '../../../public/images/studio/khonggiantrong1.jpg';
 import khonggiantrong2 from '../../../public/images/studio/khonggiantrong2.jpg';
 import AnimatedImage from '../AnimatedImage';
 
-type PersonalBackgroundType = {
+type SpaceSectionType = {
     title: string;
-    details: DetailType[];
 };
-const PersonalBackground: FC<PersonalBackgroundType> = ({ title }) => {
+const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
     const ref = useRef(null);
 
     return (
@@ -124,4 +122,4 @@ const PersonalBackground: FC<PersonalBackgroundType> = ({ title }) => {
     );
 };
 
-export default PersonalBackground;
+export default SpaceSection;
