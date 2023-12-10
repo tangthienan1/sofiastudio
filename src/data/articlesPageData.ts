@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image';
 
-import articleImg1 from '../../public/images/articles/pagination component in reactjs.jpg';
+import articleImg1 from '../../public/images/circular-text.png';
 
 export const articlesPageTitle = 'Words Can Change The World!';
 

@@ -18,13 +18,13 @@ const App: FC<AppType> = ({ Component, pageProps }) => {
     return (
         <>
             <Head>
-                <title>Andy Tang</title>
+                <title>Sofia Studio</title>
                 <meta
                     name="description"
-                    content="This is Andy Tang a software developer Portfolio"
+                    content="Sofia | Studio chụp ảnh tại Vinhome GrandPark"
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/logo.png" />
+                <link rel="icon" href="/favicon.jpeg" />
             </Head>
             <motion.main
                 className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}

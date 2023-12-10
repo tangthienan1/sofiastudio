@@ -3,22 +3,8 @@ export type HighlightContentsType = {
     content: string;
 };
 
-export const aboutTitle = `I'm not different, I'm the different!`;
+export const aboutTitle = "Bạn không cần phải đẹp, bạn cần Sofia!"
 
-export const highlightContentsData: HighlightContentsType[] = [
-    {
-        number: 20,
-        content: 'age',
-    },
-    {
-        number: 4,
-        content: 'projects completed',
-    },
-    {
-        number: 3,
-        content: 'years of experience',
-    },
-];
 
 export const biographyContentsData: string[] = [
     `Hi, I'm Andy Tang or ND for short (Thien An Tang), a full-stack web developer with a passion

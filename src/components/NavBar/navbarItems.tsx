@@ -1,9 +1,6 @@
 import { ReactElement } from 'react';
-import {
-    FacebookIcon,
-    GithubIcon,
-    LinkedInIcon
-} from '../Icons';
+import { FacebookIcon, GithubIcon, LinkedInIcon } from '../Icons';
+import { FACEBOOK_URL } from '@/const/links';
 
 type PageItemType = {
     href: string;
@@ -41,16 +38,8 @@ const navbarItems: NavbarItemsType = {
     ],
     references: [
         {
-            href: 'https://www.facebook.com/thienan.tang.99',
+            href: FACEBOOK_URL,
             Icon: () => <FacebookIcon />,
-        },
-        {
-            href: 'https://github.com/tangthienan1',
-            Icon: () => <GithubIcon />,
-        },
-        {
-            href: 'https://www.linkedin.com/in/tang-thien-an-0691a4195/',
-            Icon: () => <LinkedInIcon />,
         },
         // {
         //     href: '/',

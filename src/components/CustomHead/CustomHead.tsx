@@ -9,8 +9,9 @@ type CustomHeadType = {
 const CustomHead: FC<CustomHeadType> = ({ title, content }) => {
     return (
         <Head>
-            <title>Andy | {title}</title>
+            <title>Sofia | {title}</title>
             <meta name="description" content={content} />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </Head>
     );
 };

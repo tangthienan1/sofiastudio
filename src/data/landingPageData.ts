@@ -1,3 +1,4 @@
-export const landingPageTitle = 'Andy Tang artistic Developer.';
+export const landingPageTitle = 'Sofia Studio.';
 export const landingPageDescription =
-    'As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my Experience and Bio in and web development.';
+    '"Muốn chụp hình đẹp thì qua Sofia!"';
+export const landingPageQuote = '--Một cổ nhân nào đó--'

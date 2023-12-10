@@ -17,11 +17,12 @@ const AnimatedText: FC<AnimatedTextType> = ({ text, className }) => {
         >
             <motion.h1
                 className={`inline-block w-full text-dark font-bold capitalize text-8xl dark:text-light 
-                lg:!text-7xl sm:!text-6xl xs:!text-4xl
+                lg:!text-7xl sm:!text-5xl xs:!text-3xl
                 ${className}`}
                 variants={quote}
                 initial="initial"
                 animate="animate"
+                transition={{duration: 3}}
             >
                 {text.split(' ').map((word, index) => (
                     <motion.span
