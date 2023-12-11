@@ -1,12 +1,13 @@
+import { AnimatePresence, motion } from 'framer-motion';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+import { FC } from 'react';
+
 import { montserrat } from '@/app/layout';
 import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
 import '@/styles/globals.css';
-import { AnimatePresence } from 'framer-motion';
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { FC } from 'react';
-import { motion } from 'framer-motion';
+import 'swiper/css';
 
 type AppType = {
     Component: any;
@@ -19,10 +20,7 @@ const App: FC<AppType> = ({ Component, pageProps }) => {
         <>
             <Head>
                 <title>Sofia Studio</title>
-                <meta
-                    name="description"
-                    content="Sofia | Studio chụp ảnh tại Vinhome GrandPark"
-                />
+                <meta name="description" content="Sofia | Studio chụp ảnh tại Vinhome GrandPark" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.jpeg" />
             </Head>
