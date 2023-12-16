@@ -7,7 +7,6 @@ import { montserrat } from '@/app/layout';
 import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
 import '@/styles/globals.css';
-import 'swiper/css';
 
 type AppType = {
     Component: any;
@@ -23,6 +22,16 @@ const App: FC<AppType> = ({ Component, pageProps }) => {
                 <meta name="description" content="Sofia | Studio chụp ảnh tại Vinhome GrandPark" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.jpeg" />
+
+                <meta property="og:image" content="/favicon.jpeg" />
+
+                <meta
+                    property="og:description"
+                    content="test description"
+                />
+
+
+                <meta property="og:title" content="test title" />
             </Head>
             <motion.main
                 className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}

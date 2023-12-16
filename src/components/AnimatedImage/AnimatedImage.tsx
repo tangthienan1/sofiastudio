@@ -7,12 +7,13 @@ type AnimatedImageType = {
     src: StaticImageData;
     alt: string;
     className?: string;
+    fill?: boolean
 };
 
-const AnimatedImage: FC<AnimatedImageType> = ({ src, alt, className = 'w-full h-auto' }) => {
+const AnimatedImage: FC<AnimatedImageType> = ({ src, alt, className = 'w-full h-auto', fill }) => {
     return (
         <MotionImage
-            {...{ src, alt, className }}
+            {...{ src, alt, className, fill }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
             priority

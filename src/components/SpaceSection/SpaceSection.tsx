@@ -1,14 +1,14 @@
 import { FC, useRef } from 'react';
 
-import khonggianngoai1 from '../../../public/images/studio/khonggianngoai1.jpg';
-import khonggianngoai2 from '../../../public/images/studio/khonggianngoai2.jpg';
-import khonggianngoai3 from '../../../public/images/studio/khonggianngoai3.jpg';
-import khonggianngoai4 from '../../../public/images/studio/khonggianngoai4.jpg';
-import khonggianngoai5 from '../../../public/images/studio/khonggianngoai5.jpg';
-import khonggiantrong1 from '../../../public/images/studio/khonggiantrong1.jpg';
-import khonggiantrong2 from '../../../public/images/studio/khonggiantrong2.jpg';
-import khonggiantrongdoc from '../../../public/images/studio/khonggiantrongdoc.jpg';
-import moctreodo from '../../../public/images/studio/moctreodo.jpg';
+import khonggianngoai1 from 'public/images/studio/khonggianngoai1.jpg';
+import khonggianngoai2 from 'public/images/studio/khonggianngoai2.jpg';
+import khonggianngoai3 from 'public/images/studio/khonggianngoai3.jpg';
+import khonggianngoai4 from 'public/images/studio/khonggianngoai4.jpg';
+import khonggianngoai5 from 'public/images/studio/khonggianngoai5.jpg';
+import khonggiantrong1 from 'public/images/studio/khonggiantrong1.jpg';
+import khonggiantrong2 from 'public/images/studio/khonggiantrong2.jpg';
+import khonggiantrongdoc from 'public/images/studio/khonggiantrongdoc.jpg';
+import moctreodo from 'public/images/studio/moctreodo.jpg';
 import AnimatedImage from '../AnimatedImage';
 import Text from '../Text';
 
@@ -16,7 +16,6 @@ type SpaceSectionType = {
     title: string;
 };
 const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
-    const ref = useRef(null);
 
     return (
         <div className="grid my-32 ">
@@ -29,7 +28,7 @@ const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
                 <div>
                     <AnimatedImage
                         alt="out space 1"
-                        className="w-full rounded-2xl h-auto object-cover aspect-square"
+                        className="w-full rounded-2xl h-auto object-cover aspect-square xs:aspect-auto "
                         src={khonggianngoai1}
                     />
                 </div>
@@ -41,7 +40,7 @@ const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
                     </Text>
                     <Text>
                         Taking up the major of space in the studio space, it can be set up for
-                        livestreaming or recording various activities such as interviews,
+                        live streaming or recording various activities such as interviews,
                         podcasts,...
                     </Text>
                 </div>
@@ -60,7 +59,7 @@ const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
                 <div className="col-start-2">
                     <AnimatedImage
                         alt="out space 2"
-                        className="w-full rounded-2xl h-auto mt-4 object-cover aspect-square"
+                        className="w-full rounded-2xl h-auto mt-4 object-cover aspect-square xs:aspect-auto"
                         src={khonggianngoai2}
                     />
                 </div>
@@ -103,21 +102,21 @@ const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
 
                 <AnimatedImage
                     alt="out space 4"
-                    className="w-full rounded-2xl h-auto object-cover aspect-square"
-                    src={khonggiantrong2}
+                    className="w-full rounded-2xl h-auto object-cover aspect-square sm:aspect-auto"
+                    src={khonggiantrong1}
                 />
                 <div className="col-start-2 row-start-2">
                     <AnimatedImage
                         alt="in space 1"
-                        className="w-full rounded-2xl h-auto object-cover aspect-square"
-                        src={khonggiantrong1}
+                        className="w-full rounded-2xl h-auto object-cover aspect-square sm:aspect-auto"
+                        src={khonggiantrong2}
                     />
                 </div>
 
                 <div className="row-span-2">
                     <AnimatedImage
                         alt="out space 4"
-                        className="w-full h-auto rounded-2xl object-cover aspect-square"
+                        className="w-full mt-6 h-auto rounded-2xl object-cover sm:aspect-auto"
                         src={khonggiantrongdoc}
                     />
                 </div>
@@ -127,23 +126,23 @@ const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
                 <div>
                     <h3 className="text-xl font-bold">Hổ trợ móc</h3>
                     <AnimatedImage
-                        alt="ho tro moc treo do"
+                        alt="moc treo"
                         className="w-full rounded-2xl h-auto object-cover aspect-square"
                         src={moctreodo}
                     />
                 </div>
 
                 <div>
-                    <h3 className="text-xl font-bold">Hổ trợ móc</h3>
+                    <h3 className="text-xl font-bold">Hổ trợ máy sáy</h3>
                     <AnimatedImage
-                        alt="out space 4"
+                        alt="May say"
                         className="w-full rounded-2xl h-auto mt-7 object-cover aspect-square"
                         src={khonggianngoai4}
                     />
                 </div>
 
                 <div>
-                    <h3 className="text-xl font-bold">Hổ trợ móc</h3>
+                    <h3 className="text-xl font-bold">Hổ trợ bàn ủi </h3>
                     <AnimatedImage
                         alt="in space 1"
                         className="w-full rounded-2xl h-auto mt-4 object-cover aspect-square"

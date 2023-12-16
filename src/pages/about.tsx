@@ -8,6 +8,8 @@ import { aboutTitle } from '@/data/aboutPageData';
 import BottomFixedBtn from '@/components/BottomFixedBtn';
 import PriceTable from '@/components/PriceTable';
 import Text from '@/components/Text';
+import Slider from '@/components/Slider';
+import { feedbackPathList } from '@/components/Slider/feedbackImgPathLIst';
 
 const About = () => {
     return (
@@ -63,6 +65,11 @@ const About = () => {
                         </div>
                     </div>
                     <SpaceSection title="Không gian" />
+
+                    <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+                        Feedbacks
+                    </h2>
+                    <Slider feedbackPathList={feedbackPathList} />
                 </Layout>
                 <BottomFixedBtn />
             </main>
