@@ -1,81 +1,81 @@
 import {
     Table,
     TableBody,
-    TableCaption,
     TableCell,
-    TableFooter,
     TableHead,
     TableHeader,
     TableRow,
 } from '@/components/ui/table';
 import { formatCurrency } from '@/lib/utils';
-import Text from '../Text';
 import AnimatedText from '../AnimatedText';
+import Text from '../Text';
 
 type TableDataType = {
     numberOfHour: number;
     fee: number;
 };
 
-const EXTRA_PRICE = 50000;
-
 const tableData: TableDataType[] = [
     {
         numberOfHour: 1,
-        fee: 150000,
+        fee: 250000,
     },
     {
         numberOfHour: 2,
-        fee: 95000,
+        fee: 230000,
     },
     {
         numberOfHour: 3,
-        fee: 95000,
+        fee: 230000,
     },
     {
         numberOfHour: 4,
-        fee: 95000,
+        fee: 200000,
     },
     {
         numberOfHour: 5,
-        fee: 95000,
+        fee: 200000,
     },
     {
         numberOfHour: 6,
-        fee: 95000,
+        fee: 200000,
     },
     {
         numberOfHour: 7,
-        fee: 95000,
+        fee: 200000,
     },
     {
         numberOfHour: 8,
-        fee: 85000,
+        fee: 180000,
     },
     {
         numberOfHour: 9,
-        fee: 85000,
+        fee: 180000,
     },
     {
         numberOfHour: 10,
-        fee: 85000,
+        fee: 180000,
     },
     {
         numberOfHour: 11,
-        fee: 85000,
+        fee: 180000,
     },
     {
         numberOfHour: 12,
-        fee: 80000,
+        fee: 170000,
     },
 ];
 
-const tableHeaderText = 'OPEN DAILY: 7AM-20PM';
+const tableHeaderText = 'OPEN DAILY 7:00-20:00';
 
 const PriceTable = () => {
     const getRowColor = (numberOfHour: number) => {
         switch (numberOfHour) {
-            case 2 || 8:
+            case 2:
+                return 'bg-blue';
+            case 4:
+                return 'bg-blue';
+            case 8:
                 return 'bg-blue';
 
             case 12:
@@ -95,7 +95,7 @@ const PriceTable = () => {
                             <Text>Số giờ đặt phòng / Booking hours</Text>
                         </TableHead>
                         <TableHead>
-                            <Text>Chi phí / Fee</Text>
+                            <Text>Chi phí cho 1h / Fee per hour</Text>
                         </TableHead>
                         <TableHead className="text-right">
                             <Text>Thành tiền / Total amount</Text>
@@ -116,11 +116,13 @@ const PriceTable = () => {
                     ))}
                     <TableRow className="bg-black">
                         <TableCell className="font-medium text-white">
-                            30p đặt thêm (Extra 30m)
+                            Đặt thêm giờ (Extra time)
                         </TableCell>
-                        <TableCell className="text-white">{formatCurrency(EXTRA_PRICE)}</TableCell>
+                        <TableCell className="text-white">
+                            Tính theo chi phí 1h (Nếu trống)
+                        </TableCell>
                         <TableCell className="text-right text-white">
-                            {formatCurrency(EXTRA_PRICE)}
+                            {/* {formatCurrency(50)} */}
                         </TableCell>
                     </TableRow>
                 </TableBody>

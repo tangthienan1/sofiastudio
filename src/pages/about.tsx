@@ -25,21 +25,21 @@ const About = () => {
 
                         <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center gap-3">
                             <AnimatedText
-                                text="**Ekip tối đa 5 người, từ người thứ 6 sẽ phụ thu 50.000vnd/ng."
+                                text="**Ekip tối đa 5 người, từ người thứ 6 sẽ phụ thu 50.000 VND/người."
                                 className="!text-3xl !text-left xl:!text-2xl lg:!text-center "
                             />
                             <div className="text-left">
                                 <Text className="my-4 font-medium">
                                     Hỗ trợ phông nền, tấm hất sáng 2 màu (bạc và vàng), đèn chụp ảnh
                                     chuyên nghiệp 150W (cao 2m1), gậy chụp ảnh, đạo cụ bàn ghế, bàn
-                                    ủi hơi nước, sào treo đồ, máy lạnh, wc riêng.
+                                    ủi hơi nước, sào treo đồ, máy lạnh, WC riêng.
                                 </Text>
                                 <Text className="my-4 font-medium">
                                     Khách cần dời sofa/gương vui lòng gọi{' '}
                                     <a className="underline" href="tel:0945355824">
-                                        ‭094 5355824‬
-                                    </a>
-                                    ( Hoàng ) để được hổ trợ.
+                                        ‭0945355824‬
+                                    </a>{' '}
+                                    (Hoàng) để được hỗ trợ.
                                 </Text>
                             </div>
 
@@ -57,14 +57,15 @@ const About = () => {
                                 <Text className="my-4 font-medium">
                                     If you need to move the sofa or mirror, please call{' '}
                                     <a className="underline" href="tel:0945355824">
-                                        ‭094 5355824‬
+                                        ‭0945355824‬
                                     </a>{' '}
-                                    (Hoàng) for assistance.
+                                    (Mr. Hoàng) for assistance.
                                 </Text>
                             </div>
                         </div>
                     </div>
-                    <SpaceSection title="Không gian" />
+
+                    <SpaceSection title="Không gian / Space" />
 
                     <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
                         Feedbacks

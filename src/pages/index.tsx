@@ -39,17 +39,19 @@ const Home: FC = () => {
                             </div>
                         </div>
 
-                        <div className="w-2/3 flex flex-col items-center self-center lg:w-full lg:text-center">
+                        <div className="w-2/3 flex flex-col items-center justify-center lg:w-full lg:text-center">
                             <AnimatedText
                                 text={landingPageTitle}
-                                className="!text-6xl !text-left xl:!text-5xl lg:!text-center "
+                                className="!text-6xl xl:!text-5xl !text-center "
                             />
+
                             <div>
                                 <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                                     {landingPageDescription}
                                 </p>
                                 <p className="text-end">--Một cổ nhân nào đó--</p>
                             </div>
+
                             <div className="flex items-center mt-6 lg:self-center">
                                 <ButtonAsLink
                                     href={FACEBOOK_URL}

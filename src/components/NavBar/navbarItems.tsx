@@ -1,6 +1,6 @@
-import { ReactElement } from 'react';
-import { FacebookIcon, GithubIcon, LinkedInIcon } from '../Icons';
 import { FACEBOOK_URL } from '@/const/links';
+import { ReactElement } from 'react';
+import { FacebookIcon } from '../Icons';
 
 type PageItemType = {
     href: string;
