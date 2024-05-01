@@ -15,6 +15,61 @@ type TableDataType = {
     fee: number;
 };
 
+type MileStoneTableType = {
+    mileStone: number;
+    fee: number;
+};
+
+const mileStoneTable = [
+    {
+        mileStone: 1,
+        fee: 250000,
+    },
+    {
+        mileStone: 2,
+        fee: 220000,
+    },
+    {
+        mileStone: 4,
+        fee: 200000,
+    },
+    {
+        mileStone: 8,
+        fee: 180000,
+    },
+    {
+        mileStone: 12,
+        fee: 170000,
+    },
+];
+
+const getTableData = (mileStoneTable: MileStoneTableType[]): TableDataType[] | undefined => {
+    const tableData = [];
+
+    let mileStoneTableIndex = 0;
+
+    let currentNumberOfHour = 1;
+
+    if (!mileStoneTable.length) {
+        return;
+    }
+
+    while (mileStoneTableIndex < mileStoneTable.length) {
+        for (let i = currentNumberOfHour; i <= mileStoneTable[mileStoneTableIndex].mileStone; i++) {
+            console.log(mileStoneTable[mileStoneTableIndex].mileStone);
+            console.log(mileStoneTable[mileStoneTableIndex].fee);
+            tableData.push({
+                numberOfHour: currentNumberOfHour,
+                fee: mileStoneTable[mileStoneTableIndex].fee,
+            });
+            currentNumberOfHour++;
+        }
+        mileStoneTableIndex++;
+    }
+
+    return tableData;
+};
+
 const tableData: TableDataType[] = [
     {
         numberOfHour: 1,
@@ -22,11 +77,11 @@ const tableData: TableDataType[] = [
     },
     {
         numberOfHour: 2,
-        fee: 230000,
+        fee: 220000,
     },
     {
         numberOfHour: 3,
-        fee: 230000,
+        fee: 220000,
     },
     {
         numberOfHour: 4,
@@ -69,6 +124,8 @@ const tableData: TableDataType[] = [
 const tableHeaderText = 'OPEN DAILY 7:00-20:00';
 
 const PriceTable = () => {
+    const table = getTableData(mileStoneTable);
+    console.log({ table });
     const getRowColor = (numberOfHour: number) => {
         switch (numberOfHour) {
             case 2:
@@ -103,6 +160,7 @@ const PriceTable = () => {
                     </TableRow>
                 </TableHeader>
                 <TableBody>
+                    ;
                     {tableData.map((data, index) => (
                         <TableRow key={index} className={getRowColor(data.numberOfHour)}>
                             <TableCell className="font-medium">
@@ -119,7 +177,7 @@ const PriceTable = () => {
                             Đặt thêm giờ (Extra time)
                         </TableCell>
                         <TableCell className="text-white">
-                            Tính theo chi phí 1h (Nếu trống)
+                            Tính theo chi phí cho 1h (Nếu giờ sau trống nhen ^^)
                         </TableCell>
                         <TableCell className="text-right text-white">
                             {/* {formatCurrency(50)} */}

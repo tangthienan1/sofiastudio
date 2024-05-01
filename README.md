@@ -5,3 +5,11 @@
 -   Run `sh getimgs-script.sh ` to update feedbackImgPathList.ts
 
 -   sofiastudio.vercel.app
+
+# Run Proj
+
+```bash
+-   yarn
+-   yarn build
+-   yarn dev
+```
