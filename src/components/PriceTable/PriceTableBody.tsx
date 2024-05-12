@@ -8,7 +8,8 @@ export const PriceTableBody: FC<PriceTableBodyType> = ({ mileStoneTable }) => {
     const mileStoneNumberOfHoursList = mileStoneTable.map((mileStone) => mileStone.numberOfHour);
     const getRowColor = (numberOfHour: number) => {
         if (mileStoneNumberOfHoursList[0] === numberOfHour) return;
-        if (mileStoneNumberOfHoursList[length - 1] === numberOfHour) return 'bg-red';
+        if (mileStoneNumberOfHoursList[mileStoneNumberOfHoursList.length - 1] === numberOfHour)
+            return 'bg-red';
         if (mileStoneNumberOfHoursList.includes(numberOfHour)) return 'bg-blue';
     };
 
