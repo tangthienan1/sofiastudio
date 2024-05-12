@@ -1,11 +1,9 @@
 import { motion } from 'framer-motion';
 import { FC } from 'react';
-import logo from '../../public/images/ref/sofialogo-rmbg.png';
-import AnimatedImage from './AnimatedImage';
+import logo from '../../../public/images/ref/sofialogo-rmbg.png';
+import AnimatedImage from '../AnimatedImage';
+import { LogoType } from './type';
 
-type LogoType = {
-    onClick?: () => void;
-};
 const Logo: FC<LogoType> = ({ onClick }) => {
     return (
         <motion.div className="flex items-center justify-center h-full" onClick={onClick}>

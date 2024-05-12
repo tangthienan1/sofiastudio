@@ -3,7 +3,7 @@ import CustomHead from '@/components/CustomHead';
 import Layout from '@/components/Layout';
 import SpaceSection from '@/components/SpaceSection';
 
-import { aboutTitle } from '@/data/aboutPageData';
+import { aboutTitle, mileStoneTable } from '@/data';
 
 import BottomFixedBtn from '@/components/BottomFixedBtn';
 import PriceTable from '@/components/PriceTable';
@@ -20,7 +20,7 @@ const About = () => {
                     <AnimatedText text={aboutTitle} className="mb-16 sm:mb-8" />
                     <div className="flex items-center w-full lg:flex-col gap-16">
                         <div className="w-1/2 md:w-full">
-                            <PriceTable />
+                            <PriceTable mileStoneTable={mileStoneTable} />
                         </div>
 
                         <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center gap-3">

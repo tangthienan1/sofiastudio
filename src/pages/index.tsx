@@ -9,7 +9,7 @@ import ButtonAsLink from '@/components/ButtonAsLink';
 import CustomHead from '@/components/CustomHead';
 import Layout from '@/components/Layout';
 import { FACEBOOK_URL } from '@/const/links';
-import { landingPageDescription, landingPageTitle } from '@/data/landingPageData';
+import { landingPageDescription, landingPageTitle } from '@/data/landingPageData/landingPageData';
 
 const Home: FC = () => {
     const videoRef: any = useRef();
@@ -27,7 +27,9 @@ const Home: FC = () => {
                             >
                                 <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
                                 <video
-                                    onClick={() => (videoRef.current.muted = !videoRef.current.muted)}
+                                    onClick={() =>
+                                        (videoRef.current.muted = !videoRef.current.muted)
+                                    }
                                     ref={videoRef}
                                     autoPlay
                                     playsInline

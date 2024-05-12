@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { FC } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Image from 'next/image';
 
 type SliderType = {
     feedbackPathList: string[];
@@ -41,7 +42,13 @@ const Slider: FC<SliderType> = ({ feedbackPathList }) => {
             {feedbackPathList.map((path, index) => (
                 <SwiperSlide key={index} className="!h-auto">
                     <div className="h-full flex items-center">
-                        <img src={`/images/feedbacks/${path}`} alt={path} className=" rounded-xl" />
+                        <Image
+                            src={`/images/feedbacks/${path}`}
+                            width={500}
+                            height={500}
+                            alt={path}
+                            className=" rounded-xl"
+                        />
                     </div>
                 </SwiperSlide>
             ))}

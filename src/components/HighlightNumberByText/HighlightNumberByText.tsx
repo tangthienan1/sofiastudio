@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { HighlightContentsType } from '@/data/aboutPageData';
+import { HighlightContentsType } from '@/data';
 import AnimatedNumber from './AnimatedNumber';
 
 const HighlightNumberByText: FC<HighlightContentsType> = ({ number, content }) => {

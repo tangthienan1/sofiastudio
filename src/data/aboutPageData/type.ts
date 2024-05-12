@@ -3,4 +3,7 @@ export type HighlightContentsType = {
     content: string;
 };
 
-export const aboutTitle = 'Bạn không cần đẹp, bạn cần Sofia!';
+export type PriceTableDataType = {
+    numberOfHour: number;
+    fee: number;
+};
