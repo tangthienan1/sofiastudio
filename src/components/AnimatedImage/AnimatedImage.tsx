@@ -1,13 +1,13 @@
 import { StaticImageData } from 'next/image';
 import { FC } from 'react';
 
-import { MotionImage } from '../common';
+import { MotionImage } from '../Common/common';
 
 type AnimatedImageType = {
     src: StaticImageData;
     alt: string;
     className?: string;
-    fill?: boolean
+    fill?: boolean;
 };
 
 const AnimatedImage: FC<AnimatedImageType> = ({ src, alt, className = 'w-full h-auto', fill }) => {

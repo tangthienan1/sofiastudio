@@ -3,7 +3,7 @@ import { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { FC, RefObject, useRef } from 'react';
 
-import { MotionImage } from '../common';
+import { MotionImage } from '../Common/common';
 
 type MovingImgLinkType = {
     img: StaticImageData;
