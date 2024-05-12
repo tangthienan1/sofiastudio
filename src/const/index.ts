@@ -1,4 +1,5 @@
-export const FACEBOOK_URL = 'https://www.facebook.com/softiastudioxinhxinh';
+export const FACEBOOK_URL = 'https://www.facebook.com/sofiastudioday/';
+export const FACEBOOK_MSG = 'https://m.me/sofiastudioday/';
 
 /* eslint-disable no-unused-vars */
 export enum ThemeEnum {

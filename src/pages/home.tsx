@@ -4,7 +4,7 @@ import cameraIcon from 'public/images/svgs/flat-camera.svg';
 import { FC, useRef } from 'react';
 
 import { AnimatedText, ButtonAsLink, CustomHead, Layout } from '@/components';
-import { FACEBOOK_URL } from '@/const';
+import { FACEBOOK_MSG } from '@/const';
 import { landingPageDescription, landingPageTitle } from '@/data';
 
 const Home: FC = () => {
@@ -52,7 +52,7 @@ const Home: FC = () => {
 
                             <div className="flex items-center mt-6 lg:self-center">
                                 <ButtonAsLink
-                                    href={FACEBOOK_URL}
+                                    href={FACEBOOK_MSG}
                                     isDownLoadable={true}
                                     content="Book luôn 🥳"
                                 />

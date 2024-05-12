@@ -6,7 +6,11 @@ import { FC } from 'react';
 import { montserrat } from '@/app';
 import { Footer, NavBar } from '@/components';
 import '@/styles/globals.css';
-import { AppType } from './type';
+
+export type AppType = {
+    Component: any;
+    pageProps: any;
+};
 
 const App: FC<AppType> = ({ Component, pageProps }) => {
     const router = useRouter();
