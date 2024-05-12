@@ -1,6 +1,6 @@
 import { PriceTableDataType } from '@/data';
 
-export const getTableData = (mileStoneTable: PriceTableDataType[]) => {
+export const getPriceTableData = (mileStoneTable: PriceTableDataType[]) => {
     if (!mileStoneTable.length) {
         throw new Error('PriceTableDataType is empty!');
     }

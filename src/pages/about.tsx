@@ -1,6 +1,5 @@
 import { aboutTitle, mileStoneTable } from '@/data';
 
-import { feedbackPathList } from '@/components/Slider/feedbackImgPathLIst';
 import {
     AnimatedText,
     BottomFixedBtn,
@@ -10,6 +9,7 @@ import {
     Slider,
     SpaceSection,
     Text,
+    feedbackPathList,
 } from '@/components';
 
 const About = () => {

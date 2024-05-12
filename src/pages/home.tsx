@@ -5,7 +5,7 @@ import { FC, useRef } from 'react';
 
 import { AnimatedText, ButtonAsLink, CustomHead, Layout } from '@/components';
 import { FACEBOOK_URL } from '@/const';
-import { landingPageDescription, landingPageTitle } from '@/data/landingPageData/landingPageData';
+import { landingPageDescription, landingPageTitle } from '@/data';
 
 const Home: FC = () => {
     const videoRef: any = useRef();

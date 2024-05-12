@@ -6,8 +6,7 @@ import {
     TableHeader,
     TableRow,
 } from '@/components/ui/table';
-import { formatCurrency } from '@/lib/utils';
-import { getTableData } from '@/utils';
+import { formatCurrency, getPriceTableData } from '@/utils';
 import { PriceTableType } from './type';
 import { FC } from 'react';
 import { AnimatedText } from '../AnimatedText';
@@ -16,7 +15,7 @@ import { Text } from '../Text';
 const tableHeaderText = 'OPEN DAILY 7:00-20:00';
 
 export const PriceTable: FC<PriceTableType> = ({ mileStoneTable }) => {
-    const table = getTableData(mileStoneTable);
+    const table = getPriceTableData(mileStoneTable);
     const getRowColor = (numberOfHour: number) => {
         switch (numberOfHour) {
             case 2:

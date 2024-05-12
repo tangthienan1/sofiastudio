@@ -4,13 +4,9 @@ import { useRouter } from 'next/router';
 import { FC } from 'react';
 
 import { montserrat } from '@/app';
-import '@/styles/globals.css';
 import { Footer, NavBar } from '@/components';
-
-type AppType = {
-    Component: any;
-    pageProps: any;
-};
+import '@/styles/globals.css';
+import { AppType } from './type';
 
 const App: FC<AppType> = ({ Component, pageProps }) => {
     const router = useRouter();
