@@ -1,12 +1,9 @@
 import Head from 'next/head';
 import React, { FC } from 'react';
 
-type CustomHeadType = {
-    title: string;
-    content: string;
-};
+import { CustomHeadType } from './type';
 
-const CustomHead: FC<CustomHeadType> = ({ title, content }) => {
+export const CustomHead: FC<CustomHeadType> = ({ title, content }) => {
     return (
         <Head>
             <title>Sofia | {title}</title>
@@ -15,5 +12,3 @@ const CustomHead: FC<CustomHeadType> = ({ title, content }) => {
         </Head>
     );
 };
-
-export default CustomHead;

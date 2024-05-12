@@ -1,2 +1,2 @@
-import SpaceSection from './SpaceSection';
-export default SpaceSection;
+export * from './SpaceSection';
+export * from './type';

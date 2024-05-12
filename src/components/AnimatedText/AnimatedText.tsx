@@ -1,14 +1,10 @@
-import React, { FC } from 'react';
 import { motion } from 'framer-motion';
+import { FC } from 'react';
 
 import { quote, singleWord } from './AnimatedTextMotion';
+import { AnimatedTextType } from './type';
 
-type AnimatedTextType = {
-    text: string;
-    className?: string;
-};
-
-const AnimatedText: FC<AnimatedTextType> = ({ text, className }) => {
+export const AnimatedText: FC<AnimatedTextType> = ({ text, className }) => {
     return (
         <div
             className={
@@ -22,7 +18,7 @@ const AnimatedText: FC<AnimatedTextType> = ({ text, className }) => {
                 variants={quote}
                 initial="initial"
                 animate="animate"
-                transition={{duration: 3}}
+                transition={{ duration: 3 }}
             >
                 {text.split(' ').map((word, index) => (
                     <motion.span
@@ -37,5 +33,3 @@ const AnimatedText: FC<AnimatedTextType> = ({ text, className }) => {
         </div>
     );
 };
-
-export default AnimatedText;

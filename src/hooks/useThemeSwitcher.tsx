@@ -1,9 +1,9 @@
-import { LocalStorageKeyEnum, ThemeEnum } from '@/constants';
+import { LocalStorageKeyEnum, ThemeEnum } from '@/const';
 import { useEffect, useState } from 'react';
 
 type ModeType = ThemeEnum;
 
-const useThemeSwitcher = () => {
+export const useThemeSwitcher = () => {
     const preferDarkQuery = '(prefer-color-schema: dark)';
     const [mode, setMode] = useState<ModeType>(ThemeEnum.LIGHT);
 
@@ -53,5 +53,3 @@ const useThemeSwitcher = () => {
 
     return { mode, setMode };
 };
-
-export default useThemeSwitcher;

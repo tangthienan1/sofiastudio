@@ -1,2 +1,1 @@
-import TransitionEffect from "./TransitionEffect";
-export default TransitionEffect
+export * from './TransitionEffect';

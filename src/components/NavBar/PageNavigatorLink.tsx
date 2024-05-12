@@ -1,12 +1,8 @@
-import Link, { LinkProps } from 'next/link';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { FC } from 'react';
 
-type PagerNavigatorLinkType = LinkProps & {
-    title?: string;
-    className?: string;
-    target?: string;
-};
+import { MobilePageNavigatorLinkType, PagerNavigatorLinkType } from './type';
 
 export const PageNavigatorLink: FC<PagerNavigatorLinkType> = ({
     href,
@@ -28,10 +24,6 @@ export const PageNavigatorLink: FC<PagerNavigatorLinkType> = ({
             </span>
         </Link>
     );
-};
-
-type MobilePageNavigatorLinkType = PagerNavigatorLinkType & {
-    onClick: () => void;
 };
 
 export const MobilePageNavigatorLink: FC<MobilePageNavigatorLinkType> = ({

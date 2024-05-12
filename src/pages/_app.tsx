@@ -3,10 +3,9 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { FC } from 'react';
 
-import { montserrat } from '@/app/layout';
-import Footer from '@/components/Footer';
-import NavBar from '@/components/NavBar';
+import { montserrat } from '@/app';
 import '@/styles/globals.css';
+import { Footer, NavBar } from '@/components';
 
 type AppType = {
     Component: any;
@@ -25,11 +24,7 @@ const App: FC<AppType> = ({ Component, pageProps }) => {
 
                 <meta property="og:image" content="/favicon.jpeg" />
 
-                <meta
-                    property="og:description"
-                    content="test description"
-                />
-
+                <meta property="og:description" content="test description" />
 
                 <meta property="og:title" content="test title" />
             </Head>

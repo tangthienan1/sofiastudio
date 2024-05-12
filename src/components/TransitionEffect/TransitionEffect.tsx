@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import EffectLayout from '../EffectLayout';
 
-const TransitionEffect = () => {
+import { EffectLayout } from '../EffectLayout';
+
+export const TransitionEffect = () => {
     return (
         <EffectLayout>
             <motion.div
@@ -27,5 +28,3 @@ const TransitionEffect = () => {
         </EffectLayout>
     );
 };
-
-export default TransitionEffect;

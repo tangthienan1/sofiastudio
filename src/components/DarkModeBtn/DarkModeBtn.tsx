@@ -1,13 +1,10 @@
-import { ThemeEnum } from '@/constants';
-import React, { FC } from 'react';
+import { ThemeEnum } from '@/const';
+import { FC } from 'react';
+
 import { MoonIcon, SunIcon } from '../Icons';
+import { DarkModeBtnType } from './type';
 
-type DarkModeBtnType = {
-    onClick: () => void;
-    mode: ThemeEnum
-};
-
-const DarkModeBtn: FC<DarkModeBtnType> = ({ onClick, mode }) => {
+export const DarkModeBtn: FC<DarkModeBtnType> = ({ onClick, mode }) => {
     return (
         <button
             onClick={onClick}
@@ -23,5 +20,3 @@ const DarkModeBtn: FC<DarkModeBtnType> = ({ onClick, mode }) => {
         </button>
     );
 };
-
-export default DarkModeBtn;

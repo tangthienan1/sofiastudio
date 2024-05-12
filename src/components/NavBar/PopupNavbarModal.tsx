@@ -1,19 +1,18 @@
-import { ThemeEnum } from '@/constants';
 import { motion } from 'framer-motion';
 import { FC } from 'react';
-import DarkModeBtn from '../DarkModeBtn';
+
 import { MobilePageNavigatorLink } from './PageNavigatorLink';
-import SocialMediaLink from './SocialMediaLink';
-import navbarItems from './navbarItems';
+import { PopupNavbarModalType } from './type';
+import { DarkModeBtn } from '../DarkModeBtn';
+import { navbarItems } from './navbarItems';
+import { SocialMediaLink } from './SocialMediaLink';
 
-type MobileNavbarType = {
-    toggleMode: () => void;
-    onDarkModeClick: () => void;
-    mode: ThemeEnum;
-    className?: string;
-};
-
-const PopupNavbarModal: FC<MobileNavbarType> = ({ toggleMode, onDarkModeClick, mode, className }) => {
+export const PopupNavbarModal: FC<PopupNavbarModalType> = ({
+    toggleMode,
+    onDarkModeClick,
+    mode,
+    className,
+}) => {
     return (
         <motion.div
             initial={{ y: '50%', x: '-50%' }}
@@ -42,8 +41,6 @@ const PopupNavbarModal: FC<MobileNavbarType> = ({ toggleMode, onDarkModeClick, m
 
                 <DarkModeBtn onClick={onDarkModeClick} mode={mode} />
             </nav>
-        </motion.div >
+        </motion.div>
     );
 };
-
-export default PopupNavbarModal;

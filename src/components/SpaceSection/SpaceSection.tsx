@@ -12,13 +12,11 @@ import khonggiantrongdoc from 'public/images/studio/khonggiantrongdoc.jpg';
 import maysay from 'public/images/studio/maysay.jpg';
 import moctreodo from 'public/images/studio/moctreodo.jpg';
 
-import AnimatedImage from '../AnimatedImage';
-import Text from '../Text';
+import { SpaceSectionType } from './type';
+import { AnimatedImage } from '../AnimatedImage';
+import { Text } from '../Text';
 
-type SpaceSectionType = {
-    title: string;
-};
-const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
+export const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
     return (
         <div className="grid my-32 ">
             <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
@@ -154,5 +152,3 @@ const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
         </div>
     );
 };
-
-export default SpaceSection;

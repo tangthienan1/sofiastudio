@@ -1,2 +1,3 @@
-import AnimatedText from './AnimatedText';
-export default AnimatedText;
+export * from './AnimatedText';
+export * from './AnimatedTextMotion';
+export * from './type';

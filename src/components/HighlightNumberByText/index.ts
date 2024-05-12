@@ -1,2 +1,2 @@
-import HighlightNumberByText from "./HighlightNumberByText";
-export default HighlightNumberByText
+export * from './AnimatedNumber';
+export * from './HighlightNumberByText';

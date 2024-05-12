@@ -1,2 +1,2 @@
-import DarkModeBtn from './DarkModeBtn';
-export default DarkModeBtn;
+export * from './DarkModeBtn';
+export * from './type';

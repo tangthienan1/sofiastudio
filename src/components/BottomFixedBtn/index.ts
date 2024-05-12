@@ -1,2 +1,1 @@
-import BottomFixedBtn from "./BottomFixedBtn";
-export default BottomFixedBtn
+export * from './BottomFixedBtn';

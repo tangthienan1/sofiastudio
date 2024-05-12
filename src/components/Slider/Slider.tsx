@@ -5,12 +5,9 @@ import { FC } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Image from 'next/image';
+import { SliderType } from './type';
 
-type SliderType = {
-    feedbackPathList: string[];
-};
-
-const Slider: FC<SliderType> = ({ feedbackPathList }) => {
+export const Slider: FC<SliderType> = ({ feedbackPathList }) => {
     return (
         <Swiper
             slidesPerView={1}
@@ -55,5 +52,3 @@ const Slider: FC<SliderType> = ({ feedbackPathList }) => {
         </Swiper>
     );
 };
-
-export default Slider;

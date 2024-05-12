@@ -2,14 +2,9 @@ import { LinkProps } from 'next/link';
 import { FC } from 'react';
 
 import { MotionLink } from '../Common/common';
+import { SocialMediaLinkType } from './type';
 
-type SocialMediaLinkType = {
-    target?: string;
-    children: any;
-    className?: string;
-};
-
-const SocialMediaLink: FC<LinkProps & SocialMediaLinkType> = ({
+export const SocialMediaLink: FC<LinkProps & SocialMediaLinkType> = ({
     href = '#',
     target = '_blank',
     children,
@@ -28,5 +23,3 @@ const SocialMediaLink: FC<LinkProps & SocialMediaLinkType> = ({
         </MotionLink>
     );
 };
-
-export default SocialMediaLink;

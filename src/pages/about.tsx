@@ -1,15 +1,16 @@
-import AnimatedText from '@/components/AnimatedText';
-import CustomHead from '@/components/CustomHead';
-import Layout from '@/components/Layout';
-import SpaceSection from '@/components/SpaceSection';
-
 import { aboutTitle, mileStoneTable } from '@/data';
 
-import BottomFixedBtn from '@/components/BottomFixedBtn';
-import PriceTable from '@/components/PriceTable';
-import Text from '@/components/Text';
-import Slider from '@/components/Slider';
 import { feedbackPathList } from '@/components/Slider/feedbackImgPathLIst';
+import {
+    AnimatedText,
+    BottomFixedBtn,
+    CustomHead,
+    Layout,
+    PriceTable,
+    Slider,
+    SpaceSection,
+    Text,
+} from '@/components';
 
 const About = () => {
     return (

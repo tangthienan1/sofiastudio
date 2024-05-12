@@ -1,9 +1,9 @@
 import { FC } from 'react';
-
 import { HighlightContentsType } from '@/data';
-import AnimatedNumber from './AnimatedNumber';
 
-const HighlightNumberByText: FC<HighlightContentsType> = ({ number, content }) => {
+import { AnimatedNumber } from './AnimatedNumber';
+
+export const HighlightNumberByText: FC<HighlightContentsType> = ({ number, content }) => {
     return (
         <div className="flex flex-col items-end justify-center xl:items-center">
             <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
@@ -18,5 +18,3 @@ const HighlightNumberByText: FC<HighlightContentsType> = ({ number, content }) =
         </div>
     );
 };
-
-export default HighlightNumberByText;

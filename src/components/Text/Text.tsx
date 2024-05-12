@@ -1,15 +1,8 @@
 import { cn } from '@/lib/utils';
-import React, { FC, ReactNode } from 'react'
+import { FC } from 'react';
 
-type TextProps = {
-    className?: string;
-    children: ReactNode
-}
+import { TextProps } from './type';
 
-const Text:FC<TextProps> = ({className, children}) => {
-  return (
-    <p className={cn('text-base md:text-sm sm:text-xs', className)}>{children}</p>
-  )
-}
-
-export default Text
+export const Text: FC<TextProps> = ({ className, children }) => {
+    return <p className={cn('text-base md:text-sm sm:text-xs', className)}>{children}</p>;
+};

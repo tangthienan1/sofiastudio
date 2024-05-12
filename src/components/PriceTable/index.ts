@@ -1,4 +1,2 @@
-import PriceTable from './PriceTable';
-
-export default PriceTable;
+export * from './PriceTable';
 export * from './type';

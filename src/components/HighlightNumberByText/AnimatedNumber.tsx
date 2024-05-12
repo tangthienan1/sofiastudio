@@ -1,11 +1,9 @@
 import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import { FC, RefObject, useEffect, useRef } from 'react';
 
-type AnimatedNumberType = {
-    value: number;
-};
+import { AnimatedNumberType } from './type';
 
-const AnimatedNumber: FC<AnimatedNumberType> = ({ value }) => {
+export const AnimatedNumber: FC<AnimatedNumberType> = ({ value }) => {
     const ref: RefObject<HTMLSpanElement> = useRef(null);
 
     const motionValue = useMotionValue(0);
@@ -28,5 +26,3 @@ const AnimatedNumber: FC<AnimatedNumberType> = ({ value }) => {
 
     return <span ref={ref} />;
 };
-
-export default AnimatedNumber;

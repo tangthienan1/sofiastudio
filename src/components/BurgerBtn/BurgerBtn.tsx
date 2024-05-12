@@ -1,12 +1,7 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
+import { BurgerBtnType } from './type';
 
-type BurgerBtnType = {
-    onClick: () => void;
-    isOpen: boolean;
-    className: string;
-};
-
-const BurgerBtn: FC<BurgerBtnType> = ({ onClick, isOpen, className }) => {
+export const BurgerBtn: FC<BurgerBtnType> = ({ onClick, isOpen, className }) => {
     return (
         <button className={className} onClick={onClick}>
             <span
@@ -27,5 +22,3 @@ const BurgerBtn: FC<BurgerBtnType> = ({ onClick, isOpen, className }) => {
         </button>
     );
 };
-
-export default BurgerBtn;

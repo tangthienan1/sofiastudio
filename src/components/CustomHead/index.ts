@@ -1,2 +1,2 @@
-import CustomHead from './CustomHead';
-export default CustomHead;
+export * from './CustomHead';
+export * from './type';

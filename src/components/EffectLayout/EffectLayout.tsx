@@ -1,13 +1,7 @@
-import React, { FC, ReactNode } from 'react'
+import { FC } from 'react';
 
-type EffectLayoutType = {
-    children: ReactNode
-}
+import { EffectLayoutType } from './type';
 
-const EffectLayout:FC<EffectLayoutType> = ({children}) => {
-  return (
-    <div >{children}</div>
-  )
-}
-
-export default EffectLayout
+export const EffectLayout: FC<EffectLayoutType> = ({ children }) => {
+    return <div>{children}</div>;
+};

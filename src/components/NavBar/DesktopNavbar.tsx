@@ -1,16 +1,12 @@
-import { ThemeEnum } from '@/constants';
-import React, { FC } from 'react';
+import { FC } from 'react';
+
+import { DarkModeBtn } from '../DarkModeBtn';
 import { PageNavigatorLink } from './PageNavigatorLink';
-import navbarItems from './navbarItems';
-import SocialMediaLink from './SocialMediaLink';
-import DarkModeBtn from '../DarkModeBtn';
+import { SocialMediaLink } from './SocialMediaLink';
+import { navbarItems } from './navbarItems';
+import { DesktopNavbarType } from './type';
 
-type DesktopNavbarType = {
-    onDarkModeClick: () => void;
-    mode: ThemeEnum;
-};
-
-const DesktopNavbar: FC<DesktopNavbarType> = ({onDarkModeClick, mode}) => {
+export const DesktopNavbar: FC<DesktopNavbarType> = ({ onDarkModeClick, mode }) => {
     return (
         <div className="w-full flex justify-between items-center lg:hidden">
             <nav className="flex gap-10 xl:gap-8">
@@ -30,5 +26,3 @@ const DesktopNavbar: FC<DesktopNavbarType> = ({onDarkModeClick, mode}) => {
         </div>
     );
 };
-
-export default DesktopNavbar;

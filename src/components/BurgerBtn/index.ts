@@ -1,2 +1,2 @@
-import BurgerBtn from './BurgerBtn';
-export default BurgerBtn;
+export * from './BurgerBtn';
+export * from './type';

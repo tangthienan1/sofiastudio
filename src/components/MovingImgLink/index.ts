@@ -1,2 +1,2 @@
-import MovingImgLink from './MovingImgLink';
-export default MovingImgLink;
+export * from './MovingImgLink';
+export * from './type';

@@ -1,14 +1,10 @@
-import React, { FC, useState } from 'react'
-import BurgerBtn from '../BurgerBtn'
-import PopupNavbarModal from './PopupNavbarModal';
-import { ThemeEnum } from '@/constants';
+import { FC, useState } from 'react';
 
-type MobileNavbarProps = {
-    onDarkModeClick: () => void;
-    mode: ThemeEnum;
-}
+import { MobileNavbarType } from './type';
+import { BurgerBtn } from '../BurgerBtn';
+import { PopupNavbarModal } from './PopupNavbarModal';
 
-const MobileNavbar: FC<MobileNavbarProps> = ({ mode, onDarkModeClick }) => {
+export const MobileNavbar: FC<MobileNavbarType> = ({ mode, onDarkModeClick }) => {
     const [isBurgerOpen, setIsBurgerOpen] = useState<boolean>(false);
     return (
         <>
@@ -22,11 +18,9 @@ const MobileNavbar: FC<MobileNavbarProps> = ({ mode, onDarkModeClick }) => {
                     onDarkModeClick={onDarkModeClick}
                     mode={mode}
                     toggleMode={() => setIsBurgerOpen((prev) => !prev)}
-                    className='hidden lg:flex'
+                    className="hidden lg:flex"
                 />
             )}
         </>
-    )
-}
-
-export default MobileNavbar
+    );
+};

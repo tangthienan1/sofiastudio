@@ -1,18 +1,11 @@
 import { useMotionValue } from 'framer-motion';
-import { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { FC, RefObject, useRef } from 'react';
 
 import { MotionImage } from '../Common/common';
+import { MovingImgLinkType } from './type';
 
-type MovingImgLinkType = {
-    img: StaticImageData;
-    link: string;
-    title: string;
-    className?: string;
-};
-
-const MovingImgLink: FC<MovingImgLinkType> = ({
+export const MovingImgLink: FC<MovingImgLinkType> = ({
     title,
     img,
     link,
@@ -62,4 +55,3 @@ const MovingImgLink: FC<MovingImgLinkType> = ({
         </Link>
     );
 };
-export default MovingImgLink;

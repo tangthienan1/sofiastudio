@@ -1,11 +1,12 @@
-import { ThemeEnum } from '@/constants';
-import useThemeSwitcher from '@/hooks/useThemeSwitcher';
-import Logo from '../Logo/Logo';
-import DesktopNavbar from './DesktopNavbar';
-import MobileNavbar from './MobileNavbar';
+import { ThemeEnum } from '@/const';
 import { useRouter } from 'next/navigation';
 
-const NavBar = () => {
+import { DesktopNavbar } from './DesktopNavbar';
+import { Logo } from '../Logo';
+import { MobileNavbar } from './MobileNavbar';
+import { useThemeSwitcher } from '@/hooks';
+
+export const NavBar = () => {
     const router = useRouter();
     const { mode, setMode } = useThemeSwitcher();
 
@@ -25,5 +26,3 @@ const NavBar = () => {
         </header>
     );
 };
-
-export default NavBar;

@@ -1,17 +1,9 @@
 import Link from 'next/link';
 import { FC } from 'react';
 
-type ButtonAsLinkType = {
-    href: string;
-    isDownLoadable?: boolean;
-    icon?: any;
-    content: string;
-    isIconLeft?: boolean;
-    target?: string;
-    className?: string;
-};
+import { ButtonAsLinkType } from './type';
 
-const ButtonAsLink: FC<ButtonAsLinkType> = ({
+export const ButtonAsLink: FC<ButtonAsLinkType> = ({
     content,
     href,
     isDownLoadable = false,
@@ -35,5 +27,3 @@ const ButtonAsLink: FC<ButtonAsLinkType> = ({
         </Link>
     );
 };
-
-export default ButtonAsLink;

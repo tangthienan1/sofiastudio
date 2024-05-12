@@ -1,2 +1,2 @@
-import EffectLayout from './EffectLayout';
-export default EffectLayout;
+export * from './EffectLayout';
+export * from './type';

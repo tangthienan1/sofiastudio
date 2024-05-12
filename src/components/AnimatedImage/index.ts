@@ -1,2 +1,2 @@
-import AnimatedImage from './AnimatedImage';
-export default AnimatedImage;
+export * from './AnimatedImage';
+export * from './type';

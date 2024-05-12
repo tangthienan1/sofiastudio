@@ -1,23 +1,9 @@
-import { FACEBOOK_URL } from '@/const/links';
-import { ReactElement } from 'react';
+import { FACEBOOK_URL } from '@/const';
+
 import { FacebookIcon } from '../Icons';
+import { NavbarItemsType } from './type';
 
-type PageItemType = {
-    href: string;
-    title: string;
-};
-
-type ReferenceItemType = {
-    href: string;
-    Icon: () => ReactElement;
-};
-
-type NavbarItemsType = {
-    pages: PageItemType[];
-    references: ReferenceItemType[];
-};
-
-const navbarItems: NavbarItemsType = {
+export const navbarItems: NavbarItemsType = {
     pages: [
         {
             href: '/',
@@ -55,4 +41,3 @@ const navbarItems: NavbarItemsType = {
         // },
     ],
 };
-export default navbarItems;

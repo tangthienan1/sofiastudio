@@ -1,2 +1,2 @@
-import ButtonAsLink from "./ButtonAsLink";
-export default ButtonAsLink
+export * from './ButtonAsLink';
+export * from './type';
