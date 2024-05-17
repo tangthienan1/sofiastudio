@@ -33,26 +33,21 @@ export const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
                     />
                 </div>
                 <div>
-                    <h2 className="text-2xl font-bold mb-4">Bên ngoài / Outside</h2>
+                    <h2 className="text-2xl font-bold mb-4">Set 1</h2>
                     <Text className="mb-4">
-                        Chiếm phần lớn diện tích của studio, có thể set up để livestream hoặc ghi
-                        hình các buổi phỏng vấn, podcast,...
+                    Không gian mở, với cửa kính lớn để ánh sáng tự nhiên dễ dàng chiếu vào, tạo nên bầu không khí trong lành và sáng sủa, phù hợp để Livestream, quay content, chụp mẫu…
                     </Text>
                     <Text>
-                        Taking up the major of space in the studio space, it can be set up for live
-                        streaming or recording various activities such as interviews, podcasts,...
+                    An open space with large glass doors allowing natural light to flood in, creating a bright and airy atmosphere, suitable for livestreaming, content creation, and model photography.
                     </Text>
                 </div>
                 <div>
-                    <h2 className="text-2xl font-bold mb-4">Bên ngoài / Outside</h2>
+                <h2 className="text-2xl font-bold mb-4">Set 2</h2>
                     <Text className="mb-4">
-                        Chiếm phần lớn diện tích của studio, có thể set up để livestream hoặc ghi
-                        hình các buổi phỏng vấn, podcast,...
+                    Được decor với một sofa lớn, tường phía sau được trang trí bằng những bức tranh nghệ thuật, tạo ra một không gian chụp ảnh vừa sang trọng vừa nghệ thuật, có thể setup quay podcast, phỏng vấn, quay hình…
                     </Text>
                     <Text>
-                        Taking up the major of space in the studio space, it can be set up for
-                        livestreaming or recording various activities such as interviews,
-                        podcasts,...
+                    Decorated with a large sofa and artistic wall paintings, creating an elegant and artistic photography space, suitable for podcast setups, interviews, and filming.
                     </Text>
                 </div>
                 <div className="col-start-2">
@@ -85,18 +80,16 @@ export const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
                 />
             </section>
 
+
             {/* Khong gian trong */}
             <section className="grid grid-cols-3 grid-rows-2 gap-4 mt-8 sm:grid-cols-2">
                 <div className="row-span-2 sm:row-span-1">
-                    <h3 className="text-xl font-bold mb-2">Bên trong / Inside</h3>
+                    <h3 className="text-xl font-bold mb-2">Sảnh chờ </h3>
                     <Text className="mb-4">
-                        Diện tích không to, thể hiện sự ấm cúng, thích hợp để chụp cá nhân, thể hiện
-                        rõ hơn nét cá tính.
+                    Chiếm một phần của studio để lưu trữ đồ, phụ kiện, fresh up và thư giãn trước buổi quay chụp. Ngoài ra đối diện là một khoảng không gian bếp mang phong cách cổ điển sang trọng có thể phục vụ cho việc sản xuất hình ảnh…
                     </Text>
                     <Text>
-                        With a cozy, intimate space, it's perfect for personal photoshoots, allowing
-                        one's personality to shine through more distinctly.
-                    </Text>
+                    Occupies a part of the studio for storing equipment, accessories, freshening up, and relaxing before shoots. Additionally, opposite this area is a kitchen space with a luxurious classic style, suitable for image production.                    </Text>
                 </div>
 
                 <AnimatedImage
@@ -121,6 +114,39 @@ export const SpaceSection: FC<SpaceSectionType> = ({ title }) => {
                 </div>
             </section>
 
+            {/* Ban công */}
+            <section className="grid grid-cols-3 grid-rows-2 gap-4 mt-8 sm:grid-cols-2">
+                <div className="row-span-2 sm:row-span-1">
+                    <h3 className="text-xl font-bold mb-2">Ban công</h3>
+                    <Text className="mb-4">
+                    Một không gian ngoài trời thoáng đãng, với ban công lát gỗ, được trang trí bởi những chậu cây xanh mướt và hoa nở rộ, tạo nên một bầu không khí thư giãn và trong lành, có trang bị ghế ngồi phù hợp checkin, sản xuất hình ảnh.
+                    </Text>
+                    <Text>
+                        An airy outdoor space with a wooden-floored balcony, decorated with lush green potted plants and blooming flowers, providing a relaxing and fresh atmosphere, equipped with seating suitable for check-ins and image production.
+                    </Text>
+                </div>
+
+                <AnimatedImage
+                    alt="out space 4"
+                    className="w-full rounded-2xl h-auto object-cover aspect-square sm:aspect-auto"
+                    src={khonggiantrong1}
+                />
+                <div className="col-start-2 row-start-2">
+                    <AnimatedImage
+                        alt="in space 1"
+                        className="w-full rounded-2xl h-auto object-cover aspect-square sm:aspect-auto"
+                        src={khonggiantrong2}
+                    />
+                </div>
+
+                <div className="row-span-2">
+                    <AnimatedImage
+                        alt="out space 4"
+                        className="w-full mt-6 h-auto rounded-2xl object-cover sm:aspect-auto"
+                        src={khonggiantrongdoc}
+                    />
+                </div>
+            </section>
             <section className="grid grid-cols-3 gap-4 mt-8">
                 <div>
                     <h3 className="text-xl font-bold">Hỗ trợ móc</h3>
