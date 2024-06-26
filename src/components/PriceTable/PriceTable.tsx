@@ -5,7 +5,7 @@ import { PriceTableBody } from './PriceTableBody';
 import { PriceTableHeader } from './PriceTableHeader';
 import { PriceTableType } from './type';
 
-const tableHeaderText = 'OPEN DAILY 7:00-20:00';
+const tableHeaderText = 'OPEN DAILY 08:00-21:00';
 
 export const PriceTable: FC<PriceTableType> = ({ mileStoneTable }) => {
     return (

@@ -38,9 +38,9 @@ const About = () => {
                                 <Text className="my-4 font-medium">
                                     Khách cần dời sofa/gương vui lòng gọi{' '}
                                     <a className="underline" href="tel:0945355824">
-                                        ‭0945355824‬
+                                        ‭0946140974‬
                                     </a>{' '}
-                                    (Hoàng) để được hỗ trợ.
+                                    (Quốc) để được hỗ trợ.
                                 </Text>
                             </div>
 
@@ -58,9 +58,9 @@ const About = () => {
                                 <Text className="my-4 font-medium">
                                     If you need to move the sofa or mirror, please call{' '}
                                     <a className="underline" href="tel:0945355824">
-                                        ‭0945355824‬
+                                        ‭0946140974‬
                                     </a>{' '}
-                                    (Mr. Hoàng) for assistance.
+                                    (Mr. Quốc) for assistance.
                                 </Text>
                             </div>
                         </div>
