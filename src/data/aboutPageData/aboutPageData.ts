@@ -3,35 +3,19 @@ import { PriceTableDataType } from './type';
 export const mileStoneTable: PriceTableDataType[] = [
     {
         numberOfHour: 1,
-        fee: 250000,
-    },
-    {
-        numberOfHour: 2,
-        fee: 219000,
-    },
-    {
-        numberOfHour: 4,
-        fee: 189000,
-    },
-    {
-        numberOfHour: 4,
-        fee: 189000,
-    },
-    {
-        numberOfHour: 6,
-        fee: 179000,
-    },
-    {
-        numberOfHour: 8,
-        fee: 159000,
-    },
-    {
-        numberOfHour: 10,
         fee: 139000,
     },
     {
-        numberOfHour: 12,
+        numberOfHour: 3,
         fee: 119000,
+    },
+    {
+        numberOfHour: 5,
+        fee: 109000,
+    },
+    {
+        numberOfHour: 8,
+        fee: 99000,
     },
 ];
 

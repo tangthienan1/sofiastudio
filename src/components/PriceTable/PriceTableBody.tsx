@@ -1,10 +1,44 @@
-import { formatCurrency, getPriceTableData } from '@/utils';
+import { formatCurrency } from '@/utils';
 import { FC } from 'react';
 import { TableBody, TableCell, TableRow } from '../ui';
 import { PriceTableBodyType } from './type';
 
 export const PriceTableBody: FC<PriceTableBodyType> = ({ mileStoneTable }) => {
-    const table = getPriceTableData(mileStoneTable);
+    // const table = getPriceTableData(mileStoneTable);
+    const table = [
+        {
+            numberOfHour: 1,
+            fee: 139000,
+        },
+        {
+            numberOfHour: 2,
+            fee: 139000,
+        },
+        {
+            numberOfHour: 3,
+            fee: 119000,
+        },
+        {
+            numberOfHour: 4,
+            fee: 119000,
+        },
+        {
+            numberOfHour: 5,
+            fee: 109000,
+        },
+        {
+            numberOfHour: 6,
+            fee: 109000,
+        },
+        {
+            numberOfHour: 7,
+            fee: 109000,
+        },
+        {
+            numberOfHour: 8,
+            fee: 99000,
+        },
+    ]
     const mileStoneNumberOfHoursList = mileStoneTable.map((mileStone) => mileStone.numberOfHour);
     const getRowColor = (numberOfHour: number) => {
         if (mileStoneNumberOfHoursList[0] === numberOfHour) return;
